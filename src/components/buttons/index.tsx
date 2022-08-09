@@ -4,7 +4,7 @@ import colors from "styles/colors";
 
 interface ButtonProps {
     variant?: "contained" | "outlined" | "text";
-    color?: "purple" | "red" | "light_blue" | "yelow" | "orange" | "core_blue" | "dark_blue";
+    color?: "purple" | "red" | "light_blue" | "yellow" | "orange" | "core_blue" | "dark_blue";
     size?: "small" | "medium" | "large";
     width?: number;
     fullWidth?: boolean;
