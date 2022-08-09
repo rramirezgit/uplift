@@ -1,0 +1,18 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --purple: #5f3195;
+  --red: #d7464c;
+  --light_blue: #67b9ca;
+  --yelow: #f1ca46;
+  --orange: #e76f3a;
+  --core_blue: #0c132c;
+  --dark_blue: #14204d;
+}
+
+body {
+  margin: 0px;
+}

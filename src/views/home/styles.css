@@ -1,0 +1,98 @@
+.home {
+  background-color: var(--core_blue);
+  height: 100vh;
+}
+
+.logo-home {
+  margin-left: 78px;
+  margin-top: 28.8px;
+}
+
+.nav-home {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-buttons-home {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 500px;
+}
+
+.elipse-left-home {
+  position: absolute;
+  width: 40%;
+  height: 99vh;
+}
+
+.elipse-rigth-home {
+  position: absolute;
+  right: 0px;
+  width: 40%;
+  height: 99vh;
+}
+
+.data-home {
+  font-family: 'Futura';
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  bottom:26.1%
+}
+
+.title-home {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 56px;
+}
+
+.info-home {
+  width: 780px;
+  text-align: center;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41.0691px;
+  line-height: 55px;
+}
+
+.start-one-home {
+  position: absolute;
+  top: 9%;
+  left: 20%;
+  width: 41px;
+}
+
+.start-two-home {
+  position: absolute;
+  width: 2%;
+  bottom: 50%;
+  right: 55%;
+}
+
+.start-three-home {
+  position: absolute;
+  width: 3%;
+  bottom: 70%;
+  right: 15%;
+}
+
+.content-carrousel{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
