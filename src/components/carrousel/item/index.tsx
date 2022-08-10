@@ -20,8 +20,8 @@ export const ItemCarrousel = ({
         <div className="item-carrousel"
             style={{ backgroundColor: colors[color] }}
         >
-            {/* <div>{title}</div>
-            <Image/> */}
+            {/* <div className="item-title">{title}</div> */}
+            {/* <Image /> */}
         </div>
     );
 };

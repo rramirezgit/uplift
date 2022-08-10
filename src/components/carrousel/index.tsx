@@ -50,6 +50,7 @@ export const Carrousel = () => {
             Image: Rock,
             color: "orange"
         },
+        
     
     ];
 

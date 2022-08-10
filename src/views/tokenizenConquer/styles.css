@@ -19,7 +19,6 @@
 
 .text-tkConquer {
   position: relative;
-  left: 4.35%;
   right: 7.3%;
   top: 6.73%;
   bottom: 78.47%;
@@ -28,7 +27,7 @@
   font-size: 29.5404px;
   line-height: 40px;
   color: #ffffff;
-  width: max-content;
+  padding: 0px 4px 0px 12%;
 }
 
 .content-moneda {
