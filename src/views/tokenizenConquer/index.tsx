@@ -69,7 +69,7 @@ export const TokenizenConquer = () => {
       </div>
       {/* moneda */}
       <div className='content-moneda'>
-        <Moneda className='prueba' onMouseOver={onClick} />
+        <Moneda className='moneda-tk' onMouseOver={onClick} />
       </div>
 
       {

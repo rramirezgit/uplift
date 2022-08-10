@@ -1,6 +1,6 @@
 .card-tokenize {
-  width: 385px;
-  height: 188px;
+  width: 260px;
+  height: 142px;
   background: #142048;
   box-shadow: 0px 0px 20px 5px rgba(234, 170, 67, 0.33);
   border-radius: 27.138px;
@@ -16,18 +16,18 @@
 .card-tokenize__content__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 44px;
   text-align: center;
   color: #ffffff;
-  margin: 23px 32px 0px 29px;
+  margin: 10px 32px 0px 29px;
 }
 
 .card-tokenize__content__description {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 13px;
+  line-height: 23px;
   color: #ffffff;
-  margin: 10px 32px 24px 29px;
+  margin: -3px 32px 24px 29px;
 }
