@@ -1,8 +1,10 @@
 
+import { Button } from 'components';
 import './styles.css'
 
 export const PastExperiences = () => {
-  return <div>index</div>;
+  return <Button variant='text' />
+    ;
 };
 
- 
+

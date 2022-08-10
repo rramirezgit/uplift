@@ -8,8 +8,8 @@ export const Home = () => {
             <nav className="nav-home">
                 <Logo className="logo-home" />
                 <div className="content-buttons-home">
-                    <Button width={152.88} height={45} />
-                    <Button color="red" width={221.08} height={45} />
+                    <Button color="purple" width={152.88} height={45} text={"log in"}/>
+                    <Button color="red" width={221.08} height={45} text={"Request invite "} />
                 </div>
             </nav>
             <ElipseLeft className="elipse-left-home" />

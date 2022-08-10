@@ -7,6 +7,9 @@ const colors = {
   orange: '#E76F3A',
   core_blue: '#0C132C',
   dark_blue: '#14204D',
+  bg_blue: "#142048",
+  none: '#fff',
+ 
 };
 
 export default colors;

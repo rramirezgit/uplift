@@ -4,7 +4,7 @@ import colors from "styles/colors";
 
 interface ButtonProps {
     variant?: "contained" | "outlined" | "text";
-    color?: "purple" | "red" | "light_blue" | "yellow" | "orange" | "core_blue" | "dark_blue";
+    color?: "purple" | "red" | "light_blue" | "yellow" | "orange" | "core_blue" | "dark_blue" | "none";
     size?: "small" | "medium" | "large";
     width?: number;
     fullWidth?: boolean;
@@ -15,16 +15,18 @@ interface ButtonProps {
     [key: string]: any;
 }
 
-export const Button = ({ width = 30,height=10, text = "Button", children = "Button", variant = "contained", color = "purple", ...props }: ButtonProps) => {
+export const Button = ({ width = 123.96, height = 47.48, text = "Button", children = "Button", variant = "contained", color = "none", ...props }: ButtonProps) => {
     return (
         <ButtonMui
             variant={variant}
-
             sx={{
-                bgcolor: colors[color],
+                color: variant === "text" ? colors[color] : "",
+                borderColor: colors[color],
+                bgcolor: color !== "none" ? colors[color] : "",
                 textTransform: "Capitalize",
                 '&:hover': {
-                    backgroundColor: colors[color],
+                    backgroundColor: color !== "none" ? colors[color] : "",
+                    borderColor: colors[color],
                 },
                 width: `${width}px`,
                 height: `${height}px`,

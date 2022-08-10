@@ -1,15 +1,14 @@
 .item-carrousel {
-  width: 361.52px;
-  height: 281.47px;
+  width: 232.07px;
+  height: 180.68px;
   border-radius: 17.2151px 0px 17.2151px 17.2151px;
   transition: all 0.3s ease-in-out;
   transform: rotate(-90deg);
-
 }
 .item-carrousel:hover {
   border-radius: 22.1692px 0px 22.1692px 22.1692px;
-  width: 465.55px;
-  height: 362.47px;
+  width: 297px;
+  height: 231px;
   transform: rotate(-0deg);
   position: relative;
   top: -44px;

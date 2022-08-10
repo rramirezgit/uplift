@@ -1,0 +1,234 @@
+.tokenizenConquer {
+  background-color: var(--bg_blue);
+  height: 100vh;
+  position: relative;
+}
+
+.title-tkConquer {
+  position: relative;
+  left: 4.35%;
+  right: 59.69%;
+  top: 4.86%;
+  width: max-content;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52.5163px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.text-tkConquer {
+  position: relative;
+  left: 4.35%;
+  right: 7.3%;
+  top: 6.73%;
+  bottom: 78.47%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29.5404px;
+  line-height: 40px;
+  color: #ffffff;
+  width: max-content;
+}
+
+.content-moneda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 81vh;
+  position: relative;
+  top: 10%;
+}
+
+.moneda-cara {
+  cursor: pointer;
+  position: absolute;
+  width: 636px;
+  height: 636px;
+  z-index: 4;
+  bottom: 13%;
+}
+
+.circle-dashes-moneda {
+  position: absolute;
+}
+
+.vector-moneda {
+  position: absolute;
+  top: 15%;
+}
+
+.circle-med-moneda {
+  position: absolute;
+}
+
+.circle-small-moneda {
+  position: absolute;
+}
+
+.circle-small-moneda:hover {
+  transform: scale(1.1);
+}
+
+.buble-circle-med {
+  position: absolute;
+  left: 30.82%;
+  top: 19.85%;
+  bottom: 74.38%;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.buble-circle-med:hover {
+  transform: scale(1.1);
+}
+
+.buble-mini {
+  position: absolute;
+
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.buble-mini:hover {
+  transform: scale(1.1);
+}
+
+.buble-mini-two {
+  position: absolute;
+  left: 56.9%;
+  top: 36%;
+  bottom: 13.28%;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.buble-mini-two:hover {
+  transform: scale(1.1);
+}
+
+.buble-mini-three {
+  position: absolute;
+  left: 34%;
+  top: 45.05%;
+  bottom: 51.36%;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.buble-mini-three:hover {
+  transform: scale(1.1);
+}
+
+.buble-small-circle {
+  position: absolute;
+  left: 36.82%;
+  top: 55.85%;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.buble-small-circle:hover {
+  transform: scale(1.1);
+}
+
+.buble-small-circle-two {
+  position: absolute;
+  left: 52.38%;
+  top: 24%;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.buble-small-circle-two:hover {
+  transform: scale(1.1);
+}
+
+.buble-small-circle-three {
+  position: absolute;
+  left: 52.38%;
+  top: 54%;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.buble-small-circle-three:hover {
+  transform: scale(1.1);
+}
+
+.card-tokenize-0 {
+  position: absolute;
+  top: 31%;
+  z-index: 10;
+  left: 17%;
+  transition: all 0.3s ease-in-out;
+}
+.card-tokenize-0:hover {
+  transform: scale(1.1);
+}
+
+.card-tokenize-1 {
+  position: absolute;
+  top: 29%;
+  z-index: 10;
+  left: 60%;
+  transition: all 0.3s ease-in-out;
+}
+.card-tokenize-1:hover {
+  transform: scale(1.1);
+}
+
+.card-tokenize-2 {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 64%;
+  transition: all 0.3s ease-in-out;
+}
+.card-tokenize-2:hover {
+  transform: scale(1.1);
+}
+
+.card-tokenize-3 {
+  position: absolute;
+  top: 53%;
+  z-index: 10;
+  left: 12%;
+  transition: all 0.3s ease-in-out;
+}
+.card-tokenize-3:hover {
+  transform: scale(1.1);
+}
+
+.card-tokenize-4 {
+  position: absolute;
+  top: 76%;
+  z-index: 10;
+  left: 23%;
+  transition: all 0.3s ease-in-out;
+}
+.card-tokenize-4:hover {
+  transform: scale(1.1);
+}
+
+.start-tk {
+  position: absolute;
+  left: 75.26%;
+  right: 21.78%;
+  top: 5.61%;
+  bottom: 89.8%;
+}
+
+.start-two-tk {
+  position: absolute;
+  left: 72.77%;
+  right: 24.28%;
+  top: 87.07%;
+  bottom: 8.34%;
+}
+
+.start-three-tk {
+  position: absolute;
+  left: 4.35%;
+  right: 90.73%;
+  top: 69.81%;
+  bottom: 22.42%;
+}
