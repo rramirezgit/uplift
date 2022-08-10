@@ -1,0 +1,43 @@
+.uf--future-entertainment{
+  background: #16224A;
+  background-size:contain;
+  width: 100%;
+}
+.uf--future-entertainment .uf--content{
+  min-height: 600px;
+  background-image: url(../../assets/images/future.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding:50px 75px;
+  display: flex;
+  align-items: center;
+}
+
+.uf--future-entertainment .uf--content .uf--info{
+  max-width: 650px;
+}
+.uf--future-entertainment .uf--content .uf--info h2{
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+.uf--future-entertainment .uf--content .uf--info p:not(:last-child){
+  margin-bottom: 50px;
+}
+
+/*GLOBALS*/
+.uf--title{
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: bold;
+}
+
+.uf--font-base{
+  font-size: 24px;
+  line-height:32px;
+}
+
+@media (max-width: 1200px) {
+  .uf--future-entertainment .uf--content{
+    background-image:none;
+  }
+}
