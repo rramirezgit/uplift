@@ -1,0 +1,73 @@
+.uf--why-uplify{
+  background: #1E2F68;
+  width: 100%;
+}
+.uf--why-uplify .uf--content{
+  min-height: 800px;
+  background-image: url(../../assets/images/why-bg.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center center;
+  padding:50px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uf--why-uplify .uf--content h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.uf--why-uplify .uf--content .uf--cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.uf--why-uplify .uf--content .uf--cards .uf--card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background:#1E2F68;
+  box-shadow: 0 14px 35px rgba(0,0,0,.5);
+  padding: 20px;
+  border-radius: 20px;
+  margin:0 40px;  
+  margin-bottom: 60px;
+}
+.uf--why-uplify .uf--content .uf--cards .uf--card .icon{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background:#5E5B71;
+  width:34px;
+  height:34px;
+  border-radius:14px;
+  padding:8px;
+}
+.uf--why-uplify .uf--content .uf--cards .uf--card .icon svg{
+  display: block;
+}
+.uf--why-uplify .uf--content .uf--cards .uf--card h4{
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 20px;
+}
+.uf--why-uplify .uf--content .uf--cards .uf--card p{
+  font-family: 'Poppins',sans-serif;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 300;
+}
+
+/*GLOBALS*/
+.uf--title{
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: bold;
+}
+
+.uf--font-base{
+  font-size: 24px;
+  line-height:32px;
+}
