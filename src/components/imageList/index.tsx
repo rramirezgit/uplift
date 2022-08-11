@@ -4,10 +4,13 @@ import eros from 'assets/imageList/erosRamazzotti.png';
 import frame from 'assets/imageList/Frame1.png';
 import ana from 'assets/imageList/anakena.png';
 import "./styles.css"
+import { useMedia } from "hooks";
 
 const images = [eros, frame, ana, frame, eros, ana, eros, frame, ana, frame, eros, frame];
 
 export const ImageList = ({ opacity }: any) => {
+
+    const {mobile} = useMedia()
     const [state, setstate] = useState<any>({
         currentImg: undefined,
         currentImgProps: { x: 0, y: 0 },
@@ -82,7 +85,7 @@ export const ImageList = ({ opacity }: any) => {
         let _tl = gsap.timeline({ onStart: playBoxes })
             .set('.main', { perspective: 800 })
             .set('.photoBox', { opacity: 1 })
-            .set('.mainBoxes', { left: '-93px', xPercent: 0, width: 1200, rotationX: 0, rotationY: 0, rotationZ: 0 })
+            .set('.mainBoxes', { left: mobile ? '-133px' : '-93px', xPercent: 0, width: 1200, rotationX: 0, rotationY: 0, rotationZ: 0 })
             .set('.mainClose', { autoAlpha: 0, width: 60, height: 60, left: -30, top: -31, pointerEvents: 'none' })
             .fromTo('.main', { autoAlpha: 0 }, { duration: 0.6, ease: 'power2.inOut', autoAlpha: 1 }, 0.2)
         document.querySelectorAll('.photoBox').forEach((node) => {

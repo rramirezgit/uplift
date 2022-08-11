@@ -17,7 +17,6 @@ export const Home = () => {
             <Start className="start-one-home" />
             <Start className="start-two-home" />
             <Start className="start-three-home" />
-            <div className="data-home">
                 <div className="title-home">
                     Entertainment tech made easy
                 </div>
@@ -25,7 +24,6 @@ export const Home = () => {
                     Empowering artists own the end to end process
                     of their services via one single platform
                 </div>
-            </div>
             <div className="content-carrousel">
                 <Carrousel />
             </div>

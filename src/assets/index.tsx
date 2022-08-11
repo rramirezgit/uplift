@@ -9,3 +9,4 @@ export { ReactComponent as Ticket } from './carrousel/ticket.svg';
 export { ReactComponent as Rock } from './carrousel/rock.svg';
 export { ReactComponent as Metaverse } from './carrousel/metaverse.svg';
 export { ReactComponent as Merch } from './carrousel/merch.svg';
+export { ReactComponent as Ilustrationimg } from './ilustrationimg.svg';
