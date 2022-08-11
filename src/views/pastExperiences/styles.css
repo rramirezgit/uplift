@@ -1,0 +1,54 @@
+.pastExperiences {
+  position: relative;
+  width: 100%;
+  height: 930px;
+  background: #17265c;
+}
+
+.past-experiences__content {
+  height: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 0px 112px;
+}
+
+.past-experiences__title {
+  font-weight: 700;
+  font-size: 56.2563px;
+  line-height: 66px;
+  position: relative;
+  z-index: 99999;
+}
+
+.past-experiences__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  position: relative;
+  z-index: 99999;
+}
+
+.start-pe-one {
+  position: absolute;
+  width: 4%;
+  bottom: 79%;
+  right: 42%;
+}
+
+.start-pe-two {
+  position: absolute;
+  width: 2%;
+  bottom: 10%;
+  right: 33%;
+}
+
+.start-pe-three {
+  position: absolute;
+  width: 3%;
+  bottom: 64%;
+  right: 11%;
+}
