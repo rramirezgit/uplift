@@ -1,4 +1,4 @@
-import { Merch, Metaverse, NextButton, Nft, PrevButton, Rock, Sponsor, Streaming, Subscription, Ticket } from 'assets';
+import { Merch, Metaverse, NextButton, Nft, PrevButton, Rock, Snacks, Sponsor, Streaming, Subscription, Ticket } from 'assets';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ItemCarrousel } from './item/index';
 import { Pagination, Navigation } from "swiper";
@@ -24,7 +24,7 @@ export const Carrousel = () => {
         {
             id: 1,
             title: 'nft',
-            text: 'loreum ipsum',
+            text: 'Tokenize your products. Wether are songs, photos, personal items, special access. Remember, anything can be a token!',
             Image: <Nft/>,
             color: "purple"
         },
@@ -38,7 +38,7 @@ export const Carrousel = () => {
         {
             id: 3,
             title: 'metaverse',
-            text: 'loreum ipsum',
+            text: 'Be a part of the future of entertainment. There is no need to be a tech expert or a huge star to join the Metaverse space',
             Image: <Metaverse/>,
             color: "light_blue"
 
@@ -46,7 +46,7 @@ export const Carrousel = () => {
         {
             id: 4,
             title: 'merch',
-            text: 'loreum ipsum',
+            text: 'Simple. Sell your perch online. No need to keep an inventory, connect the best Merch companies and sell on demand',
             Image: <Merch/>,
             color: "yellow"
 
@@ -54,35 +54,35 @@ export const Carrousel = () => {
         {
             id: 5,
             title: 'crowdfunding',
-            text: 'loreum ipsum',
+            text: 'Expand your horizons. Go were your fans want you to go. Crowdfund tour dates in places you would have never guessed and secure your performances. ',
             Image: <Rock/>,
             color: "orange"
         },
         {
             id: 6,
             title: 'Streaming',
-            text: 'loreum ipsum',
+            text: 'Reach a greater audience using your own streaming channel. Weather live performances or on demand let your fans enjoy the show wherever they are',
             Image: <Streaming/>,
             color: "purple"
         },
         {
             id: 7,
             title: 'Snacks & Drinks',
-            text: 'loreum ipsum',
-            Image: <Rock/>,
+            text: 'Get the most out of your performances. Pre-sell all the snacks & drinks through your own platform. ',
+            Image: <Snacks/>,
             color: "red"
         },
         {
             id: 8,
             title: 'Subscription',
-            text: 'loreum ipsum',
+            text: 'Reward you most loyal fans! Offer exclusive access to unique content and let them keep up with you.',
             Image: <Subscription/>,
             color: "yellow"
         },
         {
             id: 9,
             title: 'Sponsor',
-            text: 'loreum ipsum',
+            text: 'Expand your revenue models by allowing Brands, Promoters and others being able to reach you and promote their services ',
             Image: <Sponsor/>,
             color: "orange"
         },
@@ -90,8 +90,8 @@ export const Carrousel = () => {
 
 
     const itemList = () => (
-        items.map(item => (
-            <ItemCarrousel  {...item} />
+        items.map((item, i ) => (
+            <ItemCarrousel key={i} {...item} />
         ))
     )
 
