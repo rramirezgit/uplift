@@ -9,6 +9,7 @@ interface ItemCarrouselProps {
     Image?: React.ReactElement;
     color: "purple" | "red" | "light_blue" | "yellow" | "orange" | "core_blue" | "dark_blue";
     onMouseHover?: any
+    onMouseLeave?: any
 }
 
 export const ItemCarrousel = ({
@@ -18,6 +19,7 @@ export const ItemCarrousel = ({
     Image,
     color,
     onMouseHover,
+    onMouseLeave,
 }: ItemCarrouselProps) => {
     const [isHover, setIsHover] = useState(false);
 
@@ -26,6 +28,7 @@ export const ItemCarrousel = ({
             const data = document.querySelector('.data-hover') as HTMLElement
             data.style.display = "block"
         }, 200);
+        
 
         return (
             <>
@@ -41,13 +44,15 @@ export const ItemCarrousel = ({
     return (
         <>
             <div className="item-carrousel"
+                tabIndex={0}
                 style={{ backgroundColor: colors[color] }}
-                onMouseEnter={() => {
+                onMouseEnter={(e) => {
                     setIsHover(true)
-                    onMouseHover()
+                    onMouseHover(e)
                 }}
-                onMouseLeave={() => {
+                onMouseLeave={(e) => {
                     setIsHover(false)
+                    onMouseLeave(e)
                 }
                 }
             >

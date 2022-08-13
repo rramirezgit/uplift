@@ -25,21 +25,21 @@ export const Carrousel = () => {
             id: 1,
             title: 'nft',
             text: 'Tokenize your products. Wether are songs, photos, personal items, special access. Remember, anything can be a token!',
-            Image: <Nft/>,
+            Image: <Nft />,
             color: "purple"
         },
         {
             id: 2,
             title: 'ticketing',
             text: 'Take advantage of your our own ticketing, box-office and access control platform. Even connect to the most popular ticket sales companies world wide and expand your sales channels',
-            Image: <Ticket/>,
+            Image: <Ticket />,
             color: "red"
         },
         {
             id: 3,
             title: 'metaverse',
             text: 'Be a part of the future of entertainment. There is no need to be a tech expert or a huge star to join the Metaverse space',
-            Image: <Metaverse/>,
+            Image: <Metaverse />,
             color: "light_blue"
 
         },
@@ -47,7 +47,7 @@ export const Carrousel = () => {
             id: 4,
             title: 'merch',
             text: 'Simple. Sell your perch online. No need to keep an inventory, connect the best Merch companies and sell on demand',
-            Image: <Merch/>,
+            Image: <Merch />,
             color: "yellow"
 
         },
@@ -55,43 +55,50 @@ export const Carrousel = () => {
             id: 5,
             title: 'crowdfunding',
             text: 'Expand your horizons. Go were your fans want you to go. Crowdfund tour dates in places you would have never guessed and secure your performances. ',
-            Image: <Rock/>,
+            Image: <Rock />,
             color: "orange"
         },
         {
             id: 6,
             title: 'Streaming',
             text: 'Reach a greater audience using your own streaming channel. Weather live performances or on demand let your fans enjoy the show wherever they are',
-            Image: <Streaming/>,
+            Image: <Streaming />,
             color: "purple"
         },
         {
             id: 7,
             title: 'Snacks & Drinks',
             text: 'Get the most out of your performances. Pre-sell all the snacks & drinks through your own platform. ',
-            Image: <Snacks/>,
+            Image: <Snacks />,
             color: "red"
         },
         {
             id: 8,
             title: 'Subscription',
             text: 'Reward you most loyal fans! Offer exclusive access to unique content and let them keep up with you.',
-            Image: <Subscription/>,
+            Image: <Subscription />,
             color: "yellow"
         },
         {
             id: 9,
             title: 'Sponsor',
             text: 'Expand your revenue models by allowing Brands, Promoters and others being able to reach you and promote their services ',
-            Image: <Sponsor/>,
+            Image: <Sponsor />,
             color: "orange"
         },
     ];
 
+    const handleHover = (e:any) => {
+        e.target.parentNode.style.marginRight = "7px !important";
+    }
+    const handleLeave = (e:any) => {
+        e.target.parentNode.style.marginRight = "0px !important"
+    }
+
 
     const itemList = () => (
-        items.map((item, i ) => (
-            <ItemCarrousel key={i} {...item} />
+        items.map((item, i) => (
+            <ItemCarrousel key={i} {...item} onMouseHover={handleHover} onMouseLeave={handleLeave} />
         ))
     )
 

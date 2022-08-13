@@ -12,8 +12,9 @@
 
 
 .alice-carousel__stage-item {
-  width: 252px !important;
+  width: 207px !important;
   height: 285px !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .prev-btn-custom {
@@ -32,6 +33,7 @@
   right: 0px !important;
   position: absolute !important;
   top: 15% !important;
+  margin-left : 0px !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -41,4 +43,8 @@
 
 .alice-carousel__next-btn {
   display: none !important;
+}
+
+.alice-carousel__stage-item:hover{
+  margin-right: 118px  !important;
 }
