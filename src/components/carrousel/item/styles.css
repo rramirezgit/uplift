@@ -1,22 +1,101 @@
 .item-carrousel {
-  width: 232.07px;
-  height: 180.68px;
-  border-radius: 17.2151px 0px 17.2151px 17.2151px;
+  width: 180.68px;
+  height: 232.07px;
+  border-radius: 0px 11.0508px 11.0508px 11.0508px;
   transition: all 0.3s ease-in-out;
-  transform: rotate(-90deg);
+  position: relative;
+  bottom: -25px;
 }
 .item-carrousel:hover {
-  border-radius: 22.1692px 0px 22.1692px 22.1692px;
-  width: 297px;
-  height: 231px;
-  transform: rotate(-0deg);
+  border-radius: 11.0508px 11.0508px 0px 11.0508px;
+  width: 231px;
+  height: 297px;
+  transform: rotate(90deg);
   position: relative;
+  left: -24px;
+  bottom: 8px;
+  z-index: 999;
+}
+
+.item-carrousel:hover > .item-title {
+  display: none;
+}
+
+.item-carrousel:hover > .item-title + .item-img {
+  display: none;
+}
+
+.item-carrousel:hover > .data-hover {
+  display: block;
+  transform: rotate(270deg);
+  opacity: 1;
+}
+.item-carrousel:hover > .data-hover > .item-title-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.item-carrousel:hover > .data-hover > .item-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .item-title {
+  position: absolute;
+  left: 9.91%;
+  right: 59.09%;
+  top: 5.83%;
+  bottom: 79.78%;
   font-style: normal;
   font-weight: 700;
   font-size: 16.69px;
   line-height: 44px;
   color: #ffffff;
+  width: 100%;
+}
+
+.item-title-hover {
+  position: absolute;
+  left: -23.09%;
+  right: 59.09%;
+  top: 5.83%;
+  bottom: 79.78%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.69px;
+  line-height: 44px;
+  color: #ffffff;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 2s linear;
+}
+
+.item-img {
+  display: flex;
+  height: 231px;
+  width: 181px;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-hover {
+  display: none;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.item-text {
+  transition: all 0.3s;
+  display: flex;
+  height: 231px;
+  width: 272px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -56px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 2s linear;
 }

@@ -2,6 +2,7 @@
 .landing {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 
@@ -21,5 +22,7 @@ body {
   font-family: 'DM Sans';
   color: #FFF;
 }
+
+
 
 *{}

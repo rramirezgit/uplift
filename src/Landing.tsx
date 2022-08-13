@@ -7,21 +7,24 @@ import {
   TokenizenConquer,
   WhyUplify
 } from "views";
+import { Footer, ScrollUplift } from "components";
 import 'styles.css'
-import { Footer } from "components";
 
 
 const Landing = () => {
   return (
     <div className="landing">
-      <Home />
-      <FutureEntretainment />
-      <TokenizenConquer />
-      <WhyUplify />
-      <PastExperiences />
-      <Parnerships />
-      <Ilustration />
-      <Footer />
+      <ScrollUplift  horizontal
+      >
+        <Home />
+        <FutureEntretainment />
+        <TokenizenConquer />
+        <WhyUplify />
+        <PastExperiences />
+        <Parnerships />
+        <Ilustration />
+        <Footer />
+      </ScrollUplift>
     </div>
   );
 }

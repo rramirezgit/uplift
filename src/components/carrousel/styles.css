@@ -2,8 +2,43 @@
   width: 100%;
   height: 352px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   gap: 20px;
+  display: -webkit-inline-box;
+}
+
+.scroll-carrousel {
+  display: flex;
+}
+
+
+.alice-carousel__stage-item {
+  width: 252px !important;
+  height: 285px !important;
+}
+
+.prev-btn-custom {
+  opacity: 0;
+
+  display: none;
+  position: absolute !important;
+  top: 15% !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.next-btn-custom {
+  display: none;
+  opacity: 0;
+  position: absolute !important;
+  right: 0px !important;
+  position: absolute !important;
+  top: 15% !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.alice-carousel__prev-btn {
+  display: none !important;
+}
+
+.alice-carousel__next-btn {
+  display: none !important;
 }
