@@ -10,11 +10,11 @@
   display: flex;
 }
 
-
 .alice-carousel__stage-item {
-  width: 207px !important;
-  height: 285px !important;
-  transition: all 0.3s ease-in-out;
+  height: 259px!important;
+  transition: all .3s ease-in-out;
+  width: 189px!important;
+  margin: 0px 10px !important;
 }
 
 .prev-btn-custom {
@@ -33,7 +33,7 @@
   right: 0px !important;
   position: absolute !important;
   top: 15% !important;
-  margin-left : 0px !important;
+  margin-left: 0px !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -45,6 +45,6 @@
   display: none !important;
 }
 
-.alice-carousel__stage-item:hover{
-  margin-right: 118px  !important;
+.alice-carousel__stage-item:hover {
+  margin-right: 132px  !important;
 }

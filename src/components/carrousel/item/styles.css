@@ -1,22 +1,23 @@
 .item-carrousel {
   border-radius: 0 11.0508px 11.0508px 11.0508px;
-  bottom: -12px;
   height: 258.07px;
   position: relative;
   transition: all 0.3s ease-in-out;
   width: 188.68px;
+  z-index: 5;
+
 }
 .item-carrousel:hover {
-  border-radius: 11.0508px 11.0508px 0px 11.0508px;
-  width: 256px;
+  border-radius: 11.0508px px 11.0508px 0px 11.0508px;
+  bottom: 25px;
   height: 310px;
-  transform: rotate(90deg);
-  position: relative;
   left: 25px;
-  bottom: 14px;
-  z-index: 999;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 260px;
+  z-index: 0;
 }
-
 
 .item-carrousel:hover > .item-title {
   display: none;
@@ -52,7 +53,7 @@
   font-size: 16.69px;
   line-height: 44px;
   color: #ffffff;
-  width: 100%;
+  width: max-content;
 }
 
 .item-title-hover {
