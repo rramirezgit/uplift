@@ -1,0 +1,52 @@
+.footer {
+  background-color: #0c132c;
+  padding: 121px 75px;
+  position: relative;
+}
+
+.footer-content {
+  height: 294.62px;
+}
+
+.footer-social {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-Icon {
+  cursor: pointer;
+}
+
+.links-footer {
+  font-weight: 400;
+  font-size: 15.713px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 20px 0px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-f {
+  cursor: pointer;
+}
+
+.hr-footer {
+  margin-top: 70px;
+  border: 0.982061px solid;
+  border-color: rgb(101 101 101);
+}
+
+.logo-footer {
+  width: 156.99px;
+  height: 68.58px;
+}
+
+.data-footer {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 11.7847px;
+  line-height: 14px;
+}

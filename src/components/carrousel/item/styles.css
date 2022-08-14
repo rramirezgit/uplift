@@ -28,9 +28,12 @@
 }
 
 .item-carrousel:hover > .data-hover {
+  height: 271px;
   display: block;
   transform: rotate(270deg);
   opacity: 1;
+  position: absolute;
+  width: 312px;
 }
 .item-carrousel:hover > .data-hover > .item-title-hover {
   visibility: visible;
@@ -58,10 +61,10 @@
 
 .item-title-hover {
   position: absolute;
-  left: -23.09%;
+  left: -0.09%;
   right: 59.09%;
-  top: 5.83%;
-  bottom: 79.78%;
+  top: -2.17%;
+  bottom: 80.78%;
   font-style: normal;
   font-weight: 700;
   font-size: 16.69px;
@@ -95,9 +98,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -56px;
+  left: -37px;
   text-align: center;
   opacity: 0;
+  /* margin: 0px 31px; */
+  padding: 0px 30px;
   visibility: hidden;
   transition: visibility 0s, opacity 2s linear;
 }

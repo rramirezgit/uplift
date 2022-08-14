@@ -103,7 +103,7 @@
 
 .content-carrousel {
   position: absolute;
-  bottom: 0px;
+  bottom: 9px;
   width: 100%;
   overflow: auto;
 }

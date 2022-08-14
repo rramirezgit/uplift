@@ -23,21 +23,21 @@ export const Carrousel = () => {
     const items: typeItem[] = [
         {
             id: 1,
-            title: 'nft',
+            title: 'NFT',
             text: 'Tokenize your products. Wether are songs, photos, personal items, special access. Remember, anything can be a token!',
             Image: <Nft />,
             color: "purple"
         },
         {
             id: 2,
-            title: 'ticketing',
+            title: 'Ticketing',
             text: 'Take advantage of your our own ticketing, box-office and access control platform. Even connect to the most popular ticket sales companies world wide and expand your sales channels',
             Image: <Ticket />,
             color: "red"
         },
         {
             id: 3,
-            title: 'metaverse',
+            title: 'Metaverse',
             text: 'Be a part of the future of entertainment. There is no need to be a tech expert or a huge star to join the Metaverse space',
             Image: <Metaverse />,
             color: "light_blue"
@@ -45,7 +45,7 @@ export const Carrousel = () => {
         },
         {
             id: 4,
-            title: 'merch',
+            title: 'Merch',
             text: 'Simple. Sell your perch online. No need to keep an inventory, connect the best Merch companies and sell on demand',
             Image: <Merch />,
             color: "yellow"
@@ -53,7 +53,7 @@ export const Carrousel = () => {
         },
         {
             id: 5,
-            title: 'crowdfunding',
+            title: 'Crowdfunding',
             text: 'Expand your horizons. Go were your fans want you to go. Crowdfund tour dates in places you would have never guessed and secure your performances. ',
             Image: <Rock />,
             color: "orange"

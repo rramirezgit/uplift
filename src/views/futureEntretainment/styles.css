@@ -1,43 +1,65 @@
-.uf--future-entertainment{
+.uf--future-entertainment {
   background: #101939;
-  background-size:contain;
+  background-size: contain;
   width: 100%;
 }
-.uf--future-entertainment .uf--content{
+.uf--future-entertainment .uf--content {
+  position: relative;
   min-height: 600px;
-  background-image: url(../../assets/images/future.svg);
   background-repeat: no-repeat;
   background-position: right center;
-  padding:50px 75px;
+  padding: 50px 75px;
   display: flex;
   align-items: center;
 }
 
-.uf--future-entertainment .uf--content .uf--info{
+.uf--future-entertainment .uf--content .uf--info {
   max-width: 650px;
 }
-.uf--future-entertainment .uf--content .uf--info h2{
+.uf--future-entertainment .uf--content .uf--info h2 {
   margin-bottom: 70px;
   margin-top: 0;
 }
-.uf--future-entertainment .uf--content .uf--info p:not(:last-child){
+.uf--future-entertainment .uf--content .uf--info p:not(:last-child) {
   margin-bottom: 50px;
 }
 
 /*GLOBALS*/
-.uf--title{
+.uf--title {
   font-size: 42px;
   line-height: 57px;
   font-weight: bold;
 }
 
-.uf--font-base{
+.uf--font-base {
   font-size: 24px;
-  line-height:32px;
+  line-height: 32px;
+}
+
+.uf--content__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
-  .uf--future-entertainment .uf--content{
-    background-image:none;
+  .verctor-future {
+    opacity: 0.3;
+    position: absolute;
+    top: 10%;
+    left: 25%;
   }
+  .uf--info{
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .verctor-future {
+    left: 15%;
+  }
+
 }
