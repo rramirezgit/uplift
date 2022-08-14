@@ -1,14 +1,16 @@
 
 import { Start, Moneda } from 'assets';
-import { CardTokenize } from 'components';
+import { Button, CardTokenize } from 'components';
 import gsap from 'gsap';
 import { MotionPathPlugin } from 'gsap/all';
+import { useMedia } from 'hooks';
 // import { useState } from 'react';
 import './styles.css'
 gsap.registerPlugin(MotionPathPlugin);
 
 export const TokenizenConquer = () => {
   //  const [state, setstate] = useState(false);
+  const { large } = useMedia()
   const dataCards = [
     {
       title1: 'Exclusive Experiences',
@@ -72,12 +74,22 @@ export const TokenizenConquer = () => {
         <Moneda className='moneda-tk' onMouseOver={onClick} />
       </div>
 
-      {
+      {large ?
+        <>
+          <div className='content-carTk'>
+            {
+              dataCards.map((data, index) => (
+                <CardTokenize key={index} data={data} />
+              ))
+            }
+          </div>
+        </>
+        :
         dataCards.map((data, index) => {
           return <CardTokenize key={index} data={data} className={`card-tokenize-${index}`} />
         })
       }
-
+        <Button variant='contained' color='orange' text='and much more' className={"button-tk"} />
 
     </div>
   );

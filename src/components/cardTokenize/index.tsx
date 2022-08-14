@@ -10,7 +10,7 @@ interface CardTokenizeProps {
     }
 }
 
-export const CardTokenize = ({ className, data }: CardTokenizeProps) => {
+export const CardTokenize = ({ className = "", data }: CardTokenizeProps) => {
     return (
         <div className={`${className} card-tokenize`}>
             <div className="card-tokenize__content">

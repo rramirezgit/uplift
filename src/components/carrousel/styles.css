@@ -48,3 +48,20 @@
 .alice-carousel__stage-item:hover {
   margin-right: 132px  !important;
 }
+
+@media (max-width: 997px) {
+  .alice-carousel__stage-item {
+    height: 283.64px !important;
+    width: 220.83px !important;
+  }
+  .alice-carousel__stage-item:hover{
+    margin-right: 10px !important;
+  }
+  .prev-btn-custom{
+    display: none !important ;
+  }
+  .next-btn-custom{
+    display: none !important ;
+  }
+  
+}

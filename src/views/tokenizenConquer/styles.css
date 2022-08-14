@@ -1,5 +1,5 @@
 .tokenizenConquer {
-  background-color: #121E45;
+  background-color: #121e45;
   height: 967px;
   position: relative;
 }
@@ -230,4 +230,108 @@
   right: 90.73%;
   top: 69.81%;
   bottom: 22.42%;
+}
+
+.content-carTk {
+  position: relative;
+  display: flex;
+  bottom: 161px;
+  gap: 31px;
+  overflow-y: scroll;
+  height: 184px;
+  width: 100%;
+}
+
+.button-tk {
+  position: absolute !important;
+  bottom: 170px;
+  left: 63% !important;
+  width: 195.8px !important;
+  height: 61.9px !important;
+  font-size: 18.5796px !important;
+  font-weight: 700 !important;
+  text-transform: lowercase !important;
+}
+
+@media (max-width: 1200px) {
+  .tokenizenConquer {
+    height: 811px;
+  }
+  .title-tkConquer {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .start-tk {
+    width: 17px;
+    left: 86.26%;
+    top: 0.61%;
+    bottom: 89.8%;
+  }
+
+  .text-tkConquer {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    top: 83px;
+    width: 320px;
+    width: 88%;
+  }
+
+  .button-tk {
+    position: absolute !important;
+    bottom: 33px;
+    left: 27% !important;
+    width: 195.8px !important;
+    height: 61.9px !important;
+    font-size: 18.5796px !important;
+    font-weight: 700 !important;
+    text-transform: lowercase !important;
+  }
+
+  .content-moneda {
+    top: -19px;  }
+
+  .content-moneda > svg {
+    width: 451.57px;
+    height: 407.1px;
+  }
+
+  .start-three-tk {
+    width: 23px;
+    height: 23px;
+    top: 25.81%;
+  }
+
+  .start-two-tk {
+    width: 23px;
+    height: 23px;
+    left: 86.77%;
+    right: 24.28%;
+    top: 53.07%;
+  }
+
+  .card-tokenize__content {
+    width: 242px;
+    height: 125px;
+  }
+
+  .card-tokenize {
+    position: relative;
+    top: 16px;
+    box-shadow: 0px 0px 13.4569px 3.36421px rgba(234, 170, 67, 0.33);
+    border-radius: 18.2596px;
+  }
+
+  .card-tokenize__content__title {
+    font-weight: 700;
+    font-size: 18.8396px;
+    line-height: 29px;
+    margin: 0px;
+  }
+
+  .card-tokenize__content__description {
+    margin: -1px 10px -1px 20px;
+  }
 }
