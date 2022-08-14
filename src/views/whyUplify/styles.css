@@ -34,7 +34,12 @@
   border-radius: 20px;
   margin:0 40px;  
   margin-bottom: 60px;
+  transition: all 0.3s ease-in-out;
 }
+.uf--card:hover {
+  transform: scale(1.1);
+}
+
 .uf--why-uplify .uf--content .uf--cards .uf--card .icon{
   display: flex;
   justify-content:center;
