@@ -112,6 +112,9 @@
   width: 600px;
   height: 600px;
 }
+.menu-icon {
+  display: none !important;
+}
 
 @media (max-width: 1200px) {
   .title-home {
@@ -125,9 +128,28 @@
 @media (max-width: 997px) {
   .title-home {
     font-size: 31.3766px;
+    top: 16.14%;
   }
 
   .info-home {
     font-size: 18.6103px;
+    width: 81%;
+    left: 9.4%;
+    top: 30.31%;
   }
+
+  .content-buttons-home {
+    display: none;
+  }
+  .menu-icon {
+    display: block !important;
+    margin-right: 10% !important;
+  }
+
+  .logo-home {
+    width: 77.55px;
+    height: 33.88px;
+    margin-left: 10%;
+  }
+  
 }

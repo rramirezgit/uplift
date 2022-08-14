@@ -1,4 +1,5 @@
-import { ElipseLeft, ElipseRigth, Logo, Start } from "assets";
+import { IconButton } from "@mui/material";
+import { ElipseLeft, ElipseRigth, Logo, MenuIcon, Start } from "assets";
 import { Button, Carrousel } from "components";
 import "./styles.css"
 
@@ -68,6 +69,9 @@ export const Home = () => {
                     <Button color="purple" width={152.88} height={45} text={"log in"} />
                     <Button color="red" width={221.08} height={45} text={"Request invite "} />
                 </div>
+                <IconButton className="menu-icon">
+                    <MenuIcon  />
+                </IconButton>
             </nav>
             <ElipseLeft className="elipse-left-home" />
             <ElipseRigth className="elipse-rigth-home" />

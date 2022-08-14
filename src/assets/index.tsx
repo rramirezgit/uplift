@@ -22,3 +22,4 @@ export { ReactComponent as GithubIcon } from './icons/github.svg';
 export { ReactComponent as TelegramIcon } from './icons/telegram.svg';
 export { ReactComponent as InstagramIcon } from './icons/instagram.svg';
 export { ReactComponent as FigmaIcon } from './icons/figma.svg';
+export { ReactComponent as MenuIcon } from './icons/menuIcon.svg';
