@@ -10,7 +10,6 @@ import {
 import { Footer, ScrollUplift } from "components";
 import 'styles.css'
 
-
 const Landing = () => {
   return (
     <div className="landing">

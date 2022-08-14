@@ -16,4 +16,9 @@ export { ReactComponent as Subscription } from './carrousel/subscription.svg';
 export { ReactComponent as Sponsor } from './carrousel/sponsor.svg';
 export { ReactComponent as PrevButton } from './carrousel/prevButon.svg';
 export { ReactComponent as NextButton } from './carrousel/nextButton.svg';
-
+export { ReactComponent as SocialIcon } from './icons/social.svg';
+export { ReactComponent as GitlabIcon } from './icons/gitlab.svg';
+export { ReactComponent as GithubIcon } from './icons/github.svg';
+export { ReactComponent as TelegramIcon } from './icons/telegram.svg';
+export { ReactComponent as InstagramIcon } from './icons/instagram.svg';
+export { ReactComponent as FigmaIcon } from './icons/figma.svg';

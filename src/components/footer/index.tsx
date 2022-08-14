@@ -1,11 +1,6 @@
-import { Grid, IconButton } from '@mui/material';
-import SocialIcon from 'assets/icons/social.png';
-import FigmaIcon from 'assets/icons/figma.png';
-import GitLab from 'assets/icons/gitlab.png';
-import Telegram from 'assets/icons/telegram.png';
-import Instagram from 'assets/icons/instagram.png';
+import { Grid } from '@mui/material';
 import './styles.css'
-import { Logo } from 'assets';
+import { FigmaIcon, GithubIcon, GitlabIcon, InstagramIcon, Logo, SocialIcon, TelegramIcon } from 'assets';
 import { Button } from 'components/buttons';
 
 export const Footer = () => {
@@ -18,21 +13,12 @@ export const Footer = () => {
           </Grid>
           <Grid item xs={6} >
             <div className="footer-social">
-              <IconButton >
-                <img src={SocialIcon} alt="" />
-              </IconButton>
-              <IconButton>
-                <img src={GitLab} alt="" />
-              </IconButton>
-              <IconButton>
-                <img src={Telegram} alt="" />
-              </IconButton>
-              <IconButton>
-                <img src={Instagram} alt="" />
-              </IconButton>
-              <IconButton>
-                <img src={FigmaIcon} alt="" />
-              </IconButton>
+              <SocialIcon />
+              <GitlabIcon />
+              <GithubIcon />
+              <TelegramIcon />
+              <InstagramIcon />
+              <FigmaIcon />
             </div>
             <div className="links-footer">
               <span className="link-f">

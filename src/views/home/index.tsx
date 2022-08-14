@@ -2,7 +2,9 @@ import { ElipseLeft, ElipseRigth, Logo, Start } from "assets";
 import { Button, Carrousel } from "components";
 import "./styles.css"
 
+
 export const Home = () => {
+
     const handleDMouseEnter = (e: any) => {
         const buttonPrev = document.querySelector('.prev-btn-custom') as HTMLElement
         const buttonNext = document.querySelector('.next-btn-custom') as HTMLElement
@@ -69,7 +71,7 @@ export const Home = () => {
             </nav>
             <ElipseLeft className="elipse-left-home" />
             <ElipseRigth className="elipse-rigth-home" />
-            <Start className="start-one-home" />
+            <Start className="start-one-home start" />
             <Start className="start-two-home" />
             <Start className="start-three-home" />
             <div className="title-home">
