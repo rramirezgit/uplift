@@ -23,3 +23,8 @@ export { ReactComponent as TelegramIcon } from './icons/telegram.svg';
 export { ReactComponent as InstagramIcon } from './icons/instagram.svg';
 export { ReactComponent as FigmaIcon } from './icons/figma.svg';
 export { ReactComponent as MenuIcon } from './icons/menuIcon.svg';
+export { ReactComponent as Artista } from './pstExpiMobile/1.svg';
+export { ReactComponent as CulturaP } from './pstExpiMobile/culturaProfetica.svg';
+export { ReactComponent as Morat } from './pstExpiMobile/morat.svg';
+export { ReactComponent as Artista2 } from './pstExpiMobile/2.svg';
+

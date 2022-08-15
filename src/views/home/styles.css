@@ -66,6 +66,35 @@
   text-align: center;
 }
 
+.title-mobile-menu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30.5465px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 92px 0px 50px;
+  padding-left: 6px;
+}
+
+.drawer-home{
+  background-color: #0C142D !important;
+  border-radius: 30px !important;
+  background: url(../../assets/bg-menu.svg) no-repeat center 33px;
+}
+
+.buttons-mobile-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-menu-mobile{
+  padding: 0px 40px;
+}
+
 .info-home {
   position: absolute;
   font-weight: 500;
@@ -151,5 +180,4 @@
     height: 33.88px;
     margin-left: 10%;
   }
-  
 }

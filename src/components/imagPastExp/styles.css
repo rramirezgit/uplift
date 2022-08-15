@@ -1,0 +1,17 @@
+.pe-images__content{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 32px;
+    overflow: scroll;
+    position: absolute;
+    z-index: 8;
+    left: 0px;
+    top: 50px;
+}
+
+.doble{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

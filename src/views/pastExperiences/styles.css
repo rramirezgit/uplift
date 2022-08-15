@@ -24,6 +24,10 @@
   width: 471px;
 }
 
+.images-mobile{
+  display: none;
+}
+
 .past-experiences__text {
   font-weight: 500;
   font-size: 24px;
@@ -69,7 +73,7 @@
     justify-content: initial;
     align-items: initial;
     color: #ffffff;
-    padding: 54px;
+    padding: 0px;
     padding-top: 59px;
   }
 
@@ -84,14 +88,24 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 66px;
-    width: 100%;
+    width: 90%;
+    padding-left: 19px;
   }
 
   .past-experiences__text {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    width: 100%;
-
+    width: 90%;
+    padding-left: 19px;
+  }
+  .images-mobile{
+    display: block;
+    position: relative;
+    top:30px;
+    left: 0px;
+  }
+  .pastExperiences{
+    height: 765px;
   }
 }

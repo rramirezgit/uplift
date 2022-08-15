@@ -1,10 +1,13 @@
-import { IconButton } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
 import { ElipseLeft, ElipseRigth, Logo, MenuIcon, Start } from "assets";
 import { Button, Carrousel } from "components";
+import { useState } from "react";
 import "./styles.css"
 
 
 export const Home = () => {
+
+    const [open, setOpen] = useState(false);
 
     const handleDMouseEnter = (e: any) => {
         const buttonPrev = document.querySelector('.prev-btn-custom') as HTMLElement
@@ -70,7 +73,7 @@ export const Home = () => {
                     <Button color="red" width={221.08} height={45} text={"Request invite "} />
                 </div>
                 <IconButton className="menu-icon">
-                    <MenuIcon  />
+                    <MenuIcon onClick={() => setOpen(true)} />
                 </IconButton>
             </nav>
             <ElipseLeft className="elipse-left-home" />
@@ -88,5 +91,27 @@ export const Home = () => {
             <div className="content-carrousel" onMouseEnter={handleDMouseEnter} onMouseLeave={handleDMouseLeave}>
                 <Carrousel />
             </div>
+
+            <Drawer
+                anchor={"right"}
+                open={open}            
+                classes={{
+                    paper: "drawer-home",
+                }}
+                onClose={() => setOpen(false)}
+            >
+                {
+                    <div className="content-menu-mobile">
+                        <div className="title-mobile-menu">
+                            Join now!
+                        </div>
+                        <div className="buttons-mobile-menu" >
+
+                        <Button color="purple" width={149.37} height={43} text={"log in"} />
+                        <Button color="red" width={149.37} height={43} text={"Request invite "} />
+                        </div>
+                    </div>
+                }
+            </Drawer>
         </div>);
 };

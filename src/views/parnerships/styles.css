@@ -78,3 +78,129 @@
     opacity:.15
   }
 }
+
+
+
+/* 
+
+.uf--sponsors {
+  background: #16224a;
+  background-size: contain;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.uf--sponsors .uf--content {
+  min-height: 600px;
+  position: relative;
+  padding: 50px 75px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.uf--sponsors img.uf--grid-sponsors {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-40%) translateX(40%);
+  z-index: 0;
+}
+
+.uf--sponsors .uf--btns-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 480px;
+  
+}
+.uf--sponsors .uf--tag-sponsors {
+  border-color: #fff;
+  color: #fff;
+  margin-right: 25px;
+  margin-bottom: 25px;
+   
+}
+
+.uf--sponsors .uf--wrap-join {
+  width: 100%;
+}
+.uf--sponsors .uf--wrap-join button {
+  height: 60px;
+  width: 230px;
+  background-color: var(--light_blue);
+}
+
+.uf--sponsors .uf--content .uf--info {
+  max-width: 650px;
+}
+.uf--sponsors .uf--content .uf--info h2 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.uf--sponsors .uf--content .uf--info p:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+
+.uf--title {
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: bold;
+}
+
+.uf--font-basep {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+@media (max-width: 1200px) {
+  .uf--sponsors img.uf--grid-sponsors {
+    opacity: 0.15;
+  }
+
+  .uf--sponsors .uf--btns-sponsors {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    position: absolute;
+    bottom: 320px;
+    flex-wrap: inherit;
+    max-width: 100%
+  }
+
+  .uf--sponsors .uf--content {
+    padding: 0px;
+    display: block;
+    position: relative;
+  }
+
+  .uf--sponsors {
+    height: 718px;
+  }
+
+  .uf--title {
+    font-size: 30px !important;
+    line-height: 30px !important;
+    top: 80px;
+    left: 20px;
+    position: relative;
+    width: 90%;
+
+  }
+
+  .uf--font-basep {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    top: 60px;
+    left: 20px;
+    position: relative;
+    width: 90%;
+  }
+
+  .br-title{
+    display: none;
+  }
+}
+
+*/

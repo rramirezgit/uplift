@@ -15,27 +15,30 @@ interface ButtonProps {
     [key: string]: any;
 }
 
-export const Button = ({ width = 123.96, height = 47.48, text = "Button", children = "Button", variant = "contained", color = "none", ...props }: ButtonProps) => {
+export const Button = ({ width, height = 47.48, text = "Button", children = "Button", variant = "contained", color = "none", ...props }: ButtonProps) => {
     return (
-        <ButtonMui
-            variant={variant}
-            sx={{
-                color: variant === "text" ? colors[color] : "",
-                borderColor: colors[color],
-                bgcolor: color !== "none" ? colors[color] : "",
-                textTransform: "Capitalize",
-                '&:hover': {
-                    backgroundColor: color !== "none" ? colors[color] : "",
+        <div>
+            <ButtonMui
+                variant={variant}
+                sx={{
+                    color: variant === "text" ? colors[color] : "white",
                     borderColor: colors[color],
-                },
-                width: `${width}px`,
-                height: `${height}px`,
+                    borderWidth: 1,
+                    bgcolor: color !== "none" ? colors[color] : "",
+                    textTransform: "Capitalize",
+                    '&:hover': {
+                        backgroundColor: color !== "none" ? colors[color] : "",
+                        borderColor: colors[color],
+                    },
+                    width: !width ? "max-content" : `${width}px`,
+                    height: `${height}px`,
 
-            }}
-            {...props}
-        >
-            {text ? text : children}
-        </ButtonMui>
+                }}
+                {...props}
+            >
+                {text ? text : children}
+            </ButtonMui>
+        </div>
     );
 };
 
