@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 930px;
-  background: #17265C;
+  background: #17265c;
 }
 
 .past-experiences__content {
@@ -21,6 +21,7 @@
   line-height: 66px;
   position: relative;
   z-index: 99999;
+  width: 471px;
 }
 
 .past-experiences__text {
@@ -30,6 +31,7 @@
   color: #ffffff;
   position: relative;
   z-index: 99999;
+  width: 465px;
 }
 
 .start-pe-one {
@@ -51,4 +53,45 @@
   width: 3%;
   bottom: 64%;
   right: 11%;
+}
+
+@media (max-width: 1250px) {
+  .constent-list-img div {
+    left: -2%;
+  }
+}
+
+@media (max-width: 900px) {
+  .constent-list-img div {
+    display: none;
+  }
+  .past-experiences__content {
+    justify-content: initial;
+    align-items: initial;
+    color: #ffffff;
+    padding: 54px;
+    padding-top: 59px;
+  }
+
+  .start-pe-one {
+    position: absolute;
+    width: 4%;
+    bottom: 89%;
+    right: 22%;
+  }
+
+  .past-experiences__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 66px;
+    width: 100%;
+  }
+
+  .past-experiences__text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: 100%;
+
+  }
 }

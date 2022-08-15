@@ -281,17 +281,19 @@
 
   .button-tk {
     position: absolute !important;
-    bottom: 33px;
     left: 27% !important;
     width: 195.8px !important;
     height: 61.9px !important;
     font-size: 18.5796px !important;
     font-weight: 700 !important;
     text-transform: lowercase !important;
+    bottom: 18px;
   }
 
   .content-moneda {
-    top: -19px;  }
+    top: -19px;  
+    height: 575px;
+  }
 
   .content-moneda > svg {
     width: 451.57px;

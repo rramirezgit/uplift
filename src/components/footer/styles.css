@@ -50,3 +50,36 @@
   font-size: 11.7847px;
   line-height: 14px;
 }
+
+.content-foo-mob {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 933px) {
+  .hr-footer {
+    display: none;
+  }
+
+  .footer {
+    padding: 25px 10px 0px;
+  }
+
+  .logo-footer{
+    width: 95.46px;
+    height: 41.7px;
+    margin-left: 9px;
+  }
+
+  .links-footer{
+    margin: 39px 0px;
+  }
+
+  .icon-foo{
+    width: 16%;
+  }
+
+  .footer-content{
+    height: 248.62px;
+  }
+}

@@ -1,25 +1,25 @@
-.uf--why-uplify{
-  background: #15224E;
+.uf--why-uplify {
+  background: #15224e;
   width: 100%;
 }
-.uf--why-uplify .uf--content{
+.uf--why-uplify .uf--content {
   min-height: 800px;
   background-image: url(../../assets/images/why-bg.svg);
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   background-position: center center;
-  padding:50px 75px;
+  padding: 50px 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.uf--why-uplify .uf--content h2{
+.uf--why-uplify .uf--content h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.uf--why-uplify .uf--content .uf--cards{
+.uf--why-uplify .uf--content .uf--cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -28,11 +28,11 @@
   display: flex;
   flex-direction: column;
   width: 290px;
-  background:#1E2F68;
-  box-shadow: 0 14px 35px rgba(0,0,0,.5);
+  background: #1e2f68;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 20px;
-  margin:0 40px;  
+  margin: 0 40px;
   margin-bottom: 60px;
   transition: all 0.3s ease-in-out;
 }
@@ -40,39 +40,74 @@
   transform: scale(1.1);
 }
 
-.uf--why-uplify .uf--content .uf--cards .uf--card .icon{
+.uf--why-uplify .uf--content .uf--cards .uf--card .icon {
   display: flex;
-  justify-content:center;
-  align-items:center;
-  background:#5E5B71;
-  width:34px;
-  height:34px;
-  border-radius:14px;
-  padding:8px;
+  justify-content: center;
+  align-items: center;
+  background: #5e5b71;
+  width: 34px;
+  height: 34px;
+  border-radius: 14px;
+  padding: 8px;
 }
-.uf--why-uplify .uf--content .uf--cards .uf--card .icon svg{
+.uf--why-uplify .uf--content .uf--cards .uf--card .icon svg {
   display: block;
 }
-.uf--why-uplify .uf--content .uf--cards .uf--card h4{
+.uf--why-uplify .uf--content .uf--cards .uf--card h4 {
   font-size: 15px;
   line-height: 15px;
   margin-bottom: 20px;
 }
-.uf--why-uplify .uf--content .uf--cards .uf--card p{
-  font-family: 'Poppins',sans-serif;
+.uf--why-uplify .uf--content .uf--cards .uf--card p {
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   margin: 0;
   font-weight: 300;
 }
 
 /*GLOBALS*/
-.uf--title{
+.uf--title {
   font-size: 42px;
   line-height: 57px;
   font-weight: bold;
 }
 
-.uf--font-base{
+.uf--font-base {
   font-size: 24px;
-  line-height:32px;
+  line-height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .uf--why-uplify .uf--content {
+    padding: 50px 19px;
+  }
+
+  .uf--why-uplify .uf--content h2 {
+    margin-bottom: 0px;
+  }
+
+  .uf--why-uplify .uf--content .uf--cards .uf--card {
+    width: 283.95px;
+    height: max-content;
+  }
+
+  .uf--why-uplify .uf--content .uf--cards .uf--card .icon {
+    width: 63.89px;
+    height: 63.89px;
+  }
+
+  .uf--why-uplify .uf--content .uf--cards .uf--card h4 {
+    font-size: 15px;
+    line-height: 15px;
+    margin: 2px;
+    font-weight: 700;
+    font-size: 17.037px;
+    line-height: 57px;
+  }
+}
+
+@media (max-width: 500px) {
+  .uf--why-uplify .uf--content{
+    background-image: url(../../assets/bg-why-up-mobile.svg);
+  }
 }
