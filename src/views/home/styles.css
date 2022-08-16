@@ -1,4 +1,5 @@
 .home {
+ 
   background-color: var(--core_blue);
   height: 100vh;
   position: relative;
@@ -79,19 +80,19 @@
   padding-left: 6px;
 }
 
-.drawer-home{
-  background-color: #0C142D !important;
+.drawer-home {
+  background-color: #0c142d !important;
   border-radius: 30px !important;
   background: url(../../assets/bg-menu.svg) no-repeat center 33px;
 }
 
-.buttons-mobile-menu{
+.buttons-mobile-menu {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.content-menu-mobile{
+.content-menu-mobile {
   padding: 0px 40px;
 }
 
@@ -111,9 +112,12 @@
 
 .start-one-home {
   position: absolute;
-  top: 9%;
-  left: 20%;
-  width: 41px;
+  top: 16%;
+  left: 7%;
+  width: 20px;
+}
+
+.content-data__home {
 }
 
 .start-two-home {
@@ -157,7 +161,7 @@
 @media (max-width: 997px) {
   .title-home {
     font-size: 31.3766px;
-    top: 16.14%;
+    top: 201px;
   }
 
   .info-home {
@@ -172,12 +176,71 @@
   }
   .menu-icon {
     display: block !important;
-    margin-right: 10% !important;
+    margin-right: 15px !important;
+    display: block !important;
+    margin-right: 24px !important;
+    margin-top: 39px !important;
   }
 
   .logo-home {
-    width: 77.55px;
-    height: 33.88px;
-    margin-left: 10%;
+    width: 93.55px;
+    height: 41.88px;
+    margin-left: 27px;
+    position: relative;
+    top: 17px;
+  }
+
+  .home {
+    height: 812px;
+  }
+}
+
+@media (max-width: 556px) {
+  .title-home {
+    font-size: 31.3766px;
+    top: 0px;
+    position: relative;
+    width: 84%;
+    margin-left: 28px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  .info-home {
+    top: 7px;
+    position: relative;
+    
+    font-size: 20.0732px;
+    line-height: 24px;   
+  }
+  .content-data__home {
+    width: 100%;
+    position: absolute;
+    top: 188px;
+  }
+  .content-carrousel{
+    bottom: 87px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .home {
+    background: url('../../assets/bg-home-mobile.svg') no-repeat center top;
+    background-color: var(--core_blue); 
+  }
+  .elipse-left-home{
+    display: none;
+  }
+  .elipse-rigth-home{
+    display: none;
+  }
+  .start-one-home{
+    display: none;
+  }
+  .start-two-home{
+    display: none;
+  }
+  .start-three-home{
+    display: none;
   }
 }

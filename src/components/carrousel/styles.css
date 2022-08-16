@@ -53,15 +53,20 @@
   .alice-carousel__stage-item {
     height: 283.64px !important;
     width: 220.83px !important;
+    margin-right: 55px !important;
   }
   .alice-carousel__stage-item:hover{
-    margin-right: 10px !important;
+    margin-right: 55px !important;
   }
   .prev-btn-custom{
     display: none !important ;
   }
   .next-btn-custom{
     display: none !important ;
+  }
+
+  .alice-carousel__wrapper{
+    height: 321px !important;
   }
   
 }

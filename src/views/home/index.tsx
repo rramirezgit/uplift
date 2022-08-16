@@ -81,12 +81,14 @@ export const Home = () => {
             <Start className="start-one-home start" />
             <Start className="start-two-home" />
             <Start className="start-three-home" />
-            <div className="title-home">
-                Entertainment tech made easy
-            </div>
-            <div className="info-home">
-                Empowering artists own the end to end process
-                of their services via one single platform
+            <div className="content-data__home">
+                <div className="title-home">
+                    Entertainment tech made easy
+                </div>
+                <div className="info-home">
+                    Empowering artists own the end to end process
+                    of their services via one single platform
+                </div>
             </div>
             <div className="content-carrousel" onMouseEnter={handleDMouseEnter} onMouseLeave={handleDMouseLeave}>
                 <Carrousel />
@@ -94,7 +96,7 @@ export const Home = () => {
 
             <Drawer
                 anchor={"right"}
-                open={open}            
+                open={open}
                 classes={{
                     paper: "drawer-home",
                 }}
@@ -107,8 +109,8 @@ export const Home = () => {
                         </div>
                         <div className="buttons-mobile-menu" >
 
-                        <Button color="purple" width={149.37} height={43} text={"log in"} />
-                        <Button color="red" width={149.37} height={43} text={"Request invite "} />
+                            <Button color="purple" width={149.37} height={43} text={"log in"} />
+                            <Button color="red" width={149.37} height={43} text={"Request invite "} />
                         </div>
                     </div>
                 }
