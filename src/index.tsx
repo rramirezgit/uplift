@@ -1,17 +1,20 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Landing from './Landing';
 import reportWebVitals from './reportWebVitals';
 import ThemeUPLIFT from './styles/ThemeUPLIFT';
 import './styles.css';
+import { Provider } from 'react-redux';
+import { store } from 'store';
+import { Navigation } from 'routers/Navigator';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-  <ThemeUPLIFT>
-      <Landing />
-  </ThemeUPLIFT>
+  <Provider store={store}>
+    <ThemeUPLIFT>
+      <Navigation />
+    </ThemeUPLIFT>
+  </Provider>
 );
 
 reportWebVitals();

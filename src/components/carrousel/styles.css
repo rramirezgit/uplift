@@ -11,10 +11,11 @@
 }
 
 .alice-carousel__stage-item {
-  height: 259px!important;
-  transition: all .3s ease-in-out;
-  width: 189px!important;
+  transition: all 0.3s ease-in-out;
+  height: 311.07px !important;
+  width: 240.68px !important;
   margin: 0px 10px !important;
+  top: 28px !important;
 }
 
 .prev-btn-custom {
@@ -45,8 +46,12 @@
   display: none !important;
 }
 
-.alice-carousel__stage-item:hover {
-  margin-right: 132px  !important;
+.alice-item-carrousel-hover {
+  margin-right: 132px !important;
+}
+
+.alice-carousel__wrapper {
+  height: 360px !important;
 }
 
 @media (max-width: 597px) {
@@ -55,18 +60,17 @@
     width: 220.83px !important;
     margin-right: 55px !important;
   }
-  .alice-carousel__stage-item:hover{
+  .alice-carousel__stage-item:hover {
     margin-right: 55px !important;
   }
-  .prev-btn-custom{
+  .prev-btn-custom {
     display: none !important ;
   }
-  .next-btn-custom{
+  .next-btn-custom {
     display: none !important ;
   }
 
-  .alice-carousel__wrapper{
-    height: 321px !important;
+  .alice-carousel__wrapper {
+    height: 360px !important;
   }
-  
 }

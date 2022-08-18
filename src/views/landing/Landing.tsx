@@ -6,15 +6,15 @@ import {
   PastExperiences,
   TokenizenConquer,
   WhyUplify
-} from "views";
+} from "views/landing";
 import { Footer, ScrollUplift } from "components";
 import 'styles.css'
 
-const Landing = () => {
+export const Landing = () => {
   return (
     <div className="landing">
-      <ScrollUplift  horizontal
-      >
+      {/* <ScrollUplift  horizontal
+      > */}
         <Home />
         <FutureEntretainment />
         <TokenizenConquer />
@@ -23,9 +23,9 @@ const Landing = () => {
         <Parnerships />
         <Ilustration />
         <Footer />
-      </ScrollUplift>
+      {/* </ScrollUplift> */}
     </div>
   );
 }
 
-export default Landing;
+ 

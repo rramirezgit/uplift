@@ -26,7 +26,7 @@
 
 @media (max-width: 1250px) {
   .ilustration {
-    background-image: url(../../assets/ilustrationimg.svg);
+    background-image: url(../../../assets/ilustrationimg.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom;

@@ -1,6 +1,6 @@
 import colors from 'styles/colors';
 import './styles.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMedia } from 'hooks';
 
 interface ItemCarrouselProps {
@@ -23,8 +23,46 @@ export const ItemCarrousel = ({
     onMouseLeave,
 }: ItemCarrouselProps) => {
     const [isHover, setIsHover] = useState(false);
+    const [isRotate, setIsRotate] = useState(false);
+    const [timeOut, setTimeOut] = useState<any>(null);
 
     const { mobile, medium } = useMedia()
+
+
+    const disablesEvents = (e: any) => {
+        if (isRotate) {
+            setTimeout(() => {
+                const itemCarousel = document.querySelector(`#itemCarrousel${id}`) as HTMLElement
+                const title = document.querySelector(`#item-title${id}`) as HTMLElement
+                const image = document.querySelector(`#item-img${id}`) as HTMLElement
+                title.style.display = "block"
+                image.style.display = "flex"
+                itemCarousel.className = "item-carrousel";
+                itemCarousel.parentElement?.classList.remove("alice-item-carrousel-hover");
+                setIsRotate(false)
+            }, 1)
+        } else {
+            setIsRotate(false)
+            clearTimeout(timeOut);
+        }
+    }
+
+    const enableEvents = (e: any) => {
+        let time = setTimeout(() => {
+            setIsRotate(true)
+            e.stopPropagation()
+            const itemCarousel = document.querySelector(`#itemCarrousel${id}`) as HTMLElement
+            const title = document.querySelector(`#item-title${id}`) as HTMLElement
+            const image = document.querySelector(`#item-img${id}`) as HTMLElement
+            title.style.display = "none"
+            image.style.display = "none"
+            itemCarousel.classList.add("item-carrousel__hover")
+            itemCarousel.parentElement?.classList.add("alice-item-carrousel-hover");
+
+        }, 500)
+        setTimeOut(time)
+
+    }
 
     const delayClass = () => {
         setTimeout(() => {
@@ -36,8 +74,8 @@ export const ItemCarrousel = ({
         return (
             <>
                 <div style={{ display: "none" }} className="data-hover">
-                    <div className="item-title-hover">{title}</div>
-                    <div className="item-text">
+                    <div className="item-title-hover" id={`itemCarrousel${id}`}>{title}</div>
+                    <div className="item-text" id={`itemCarrousel${id}`}>
                         {text}
                     </div>
                 </div>
@@ -47,29 +85,33 @@ export const ItemCarrousel = ({
     return (
         <>
             {!mobile ?
-
-                <div className="item-carrousel"
-                    tabIndex={0}
-                    style={{ backgroundColor: colors[color] }}
-                    onMouseEnter={(e) => {
-                        setIsHover(true)
-                        onMouseHover(e)
-                    }}
-                    onMouseLeave={(e) => {
-                        setIsHover(false)
-                        onMouseLeave(e)
-                    }
-                    }
-                >
-                    <div className="item-title">{title}</div>
-                    <div className="item-img">
-                        {Image}
+                <>
+                    <div className="item-carrousel"
+                        tabIndex={0}
+                        id={`itemCarrousel${id}`}
+                        style={{ backgroundColor: colors[color] }}
+                        onMouseEnter={(e) => {
+                            enableEvents(e)
+                            setIsHover(true)
+                            onMouseHover(e)
+                        }}
+                        onMouseLeave={(e) => {
+                            disablesEvents(e)
+                            setIsHover(false)
+                            onMouseLeave(e)
+                        }
+                        }
+                    >
+                        <div className="item-title" id={`item-title${id}`}>{title}</div>
+                        <div className="item-img" id={`item-img${id}`}>
+                            {Image}
+                        </div>
+                        {isRotate &&
+                            delayClass()
+                        }
                     </div>
 
-                    {isHover &&
-                        delayClass()
-                    }
-                </div>
+                </>
                 :
                 <div
                     className="item-carrousel-mobile"

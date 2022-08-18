@@ -1,5 +1,5 @@
 import './styles.css';
-import gridSponsors from '../../assets/images/sponsor.png';
+import gridSponsors from 'assets/images/sponsor.png';
 import { Button } from 'components';
 
 export const Parnerships = () => {
@@ -26,9 +26,7 @@ export const Parnerships = () => {
             <Button className="uf--tag-sponsors" variant='outlined' text='Sponsors' color='none' />           
             <Button className="uf--tag-sponsors" variant='outlined' text='NFT' color='none' />
             <div className="uf--wrap-join">
-              <Button variant="contained">
-                Join the network
-              </Button>
+              <Button variant="contained" text='Join the network'/>
             </div>
           </div>
         </div>

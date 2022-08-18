@@ -1,7 +1,6 @@
 .home {
- 
   background-color: var(--core_blue);
-  height: 100vh;
+  height: 969px;
   position: relative;
 }
 
@@ -56,11 +55,10 @@
 
 .title-home {
   position: absolute;
-
   top: 28.14%;
   bottom: 67.02%;
-  font-weight: 500;
-  font-size: 48.3766px;
+  font-weight: 900;
+  font-size: 51.3766px;
   line-height: 46px;
   color: #ffffff;
   width: 100%;
@@ -83,7 +81,7 @@
 .drawer-home {
   background-color: #0c142d !important;
   border-radius: 30px !important;
-  background: url(../../assets/bg-menu.svg) no-repeat center 33px;
+  background: url(../../../assets/bg-menu.svg) no-repeat center 33px;
 }
 
 .buttons-mobile-menu {
@@ -98,15 +96,14 @@
 
 .info-home {
   position: absolute;
-  font-weight: 500;
   color: #ffffff;
   text-align: center;
   bottom: 53.27%;
-  font-size: 29.6103px;
+  font-size: 27.6103px;
   left: 23.4%;
   line-height: 40px;
   right: 30.03%;
-  top: 36.31%;
+  top: 35.31%;
   width: 53%;
 }
 
@@ -136,7 +133,7 @@
 
 .content-carrousel {
   position: absolute;
-  bottom: 9px;
+  bottom: 63px;
   width: 100%;
   overflow: auto;
 }
@@ -206,41 +203,40 @@
     line-height: 30px;
   }
   .info-home {
-    top: 7px;
+    top: 24px;
     position: relative;
-    
+
     font-size: 20.0732px;
-    line-height: 24px;   
+    line-height: 24px;
   }
   .content-data__home {
     width: 100%;
     position: absolute;
     top: 188px;
   }
-  .content-carrousel{
+  .content-carrousel {
     bottom: 87px;
   }
 }
 
-
 @media (max-width: 375px) {
   .home {
-    background: url('../../assets/bg-home-mobile.svg') no-repeat center top;
-    background-color: var(--core_blue); 
+    background: url('../../../assets/bg-home-mobile.svg') no-repeat center top;
+    background-color: var(--core_blue);
   }
-  .elipse-left-home{
+  .elipse-left-home {
     display: none;
   }
-  .elipse-rigth-home{
+  .elipse-rigth-home {
     display: none;
   }
-  .start-one-home{
+  .start-one-home {
     display: none;
   }
-  .start-two-home{
+  .start-two-home {
     display: none;
   }
-  .start-three-home{
+  .start-three-home {
     display: none;
   }
 }

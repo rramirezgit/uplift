@@ -86,12 +86,34 @@ export const Carrousel = () => {
             Image: <Sponsor />,
             color: "orange"
         },
+        {
+            id: 10,
+            title: 'NFT',
+            text: 'Tokenize your products. Wether are songs, photos, personal items, special access. Remember, anything can be a token!',
+            Image: <Nft />,
+            color: "purple"
+        },
+        {
+            id: 12,
+            title: 'Ticketing',
+            text: 'Take advantage of your our own ticketing, box-office and access control platform. Even connect to the most popular ticket sales companies world wide and expand your sales channels',
+            Image: <Ticket />,
+            color: "red"
+        },
+        {
+            id: 13,
+            title: 'Metaverse',
+            text: 'Be a part of the future of entertainment. There is no need to be a tech expert or a huge star to join the Metaverse space',
+            Image: <Metaverse />,
+            color: "light_blue"
+
+        },
     ];
 
-    const handleHover = (e:any) => {
+    const handleHover = (e: any) => {
         e.target.parentNode.style.marginRight = "7px !important";
     }
-    const handleLeave = (e:any) => {
+    const handleLeave = (e: any) => {
         e.target.parentNode.style.marginRight = "0px !important"
     }
 
@@ -106,11 +128,14 @@ export const Carrousel = () => {
         <>
 
             <AliceCarousel
+                paddingLeft={10}
+                paddingRight={400}
                 autoWidth
                 mouseTracking
                 items={itemList()}
                 disableDotsControls={true}
-                infinite={true}
+                infinite={false}
+
                 ref={AliceCarrousel}
             />
             <PrevButton className="prev-btn-custom" onClick={() => AliceCarrousel?.current?.slidePrev()}>Prev button</PrevButton>

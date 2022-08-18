@@ -1,0 +1,249 @@
+.login {
+  background-color: var(--core_blue);
+  height: 100vh;
+  position: relative;
+}
+
+.logo-login {
+  margin-left: 78px;
+  margin-top: 28.8px;
+  height: 62px;
+}
+
+.nav-login {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-buttons-login {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 500px;
+}
+
+.elipse-left-login {
+  position: absolute;
+  width: 40%;
+  height: 99vh;
+}
+
+.elipse-rigth-login {
+  position: absolute;
+  right: 0px;
+  width: 40%;
+  height: 99vh;
+}
+
+.data-login {
+  font-family: 'Futura';
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  bottom: 16.1%;
+}
+
+.title-login {
+  font-weight: 900;
+  font-size: 51.3766px;
+  line-height: 46px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.title-mobile-menu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30.5465px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 92px 0px 50px;
+  padding-left: 6px;
+}
+
+.content-menu-mobile {
+  padding: 0px 40px;
+}
+
+.info-login {
+  color: #ffffff;
+  text-align: center;
+  font-size: 27.6103px;
+  line-height: 40px;
+}
+
+.start-one-login {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  width: 20px;
+}
+
+.start-two-login {
+  position: absolute;
+  width: 2%;
+  bottom: 15%;
+  right: 47%;
+}
+
+.start-three-login {
+  position: absolute;
+  width: 3%;
+  bottom: 70%;
+  right: 15%;
+}
+
+.form-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.content-carrousel {
+  position: absolute;
+  bottom: 63px;
+  width: 100%;
+  overflow: auto;
+}
+.button-login {
+  width: 384.11px !important;
+  height: 51.56px !important;
+  font-size: 28px !important;
+}
+
+.input-login {
+  width: 384.11px;
+  height: 51.56px;
+}
+
+.input-login * input {
+  font-size: 182% !important;
+}
+
+.modeda-tk {
+  width: 600px;
+  height: 600px;
+}
+.menu-icon {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .title-login {
+    font-size: 42.3766px;
+  }
+
+  .info-login {
+    font-size: 23.6103px;
+  }
+}
+@media (max-width: 997px) {
+  .title-login {
+    font-size: 31.3766px;
+  }
+
+  .info-login {
+    font-size: 18.6103px;
+  }
+
+  .content-buttons-login {
+    display: none;
+  }
+  .menu-icon {
+    display: block !important;
+    margin-right: 15px !important;
+    display: block !important;
+    margin-right: 24px !important;
+    margin-top: 39px !important;
+  }
+
+  .logo-login {
+    width: 93.55px;
+    height: 41.88px;
+    margin-left: 27px;
+    position: relative;
+    top: 17px;
+  }
+
+  .login {
+    height: 812px;
+  }
+}
+
+@media (max-width: 556px) {
+  .title-login {
+    font-size: 31.3766px;
+    top: 0px;
+    position: relative;
+    width: 84%;
+    margin-left: 28px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  .info-login {
+    top: 24px;
+    position: relative;
+    font-size: 20.0732px;
+    line-height: 24px;
+  }
+  .content-data__login {
+    width: 100%;
+    position: absolute;
+    top: 188px;
+  }
+  .content-carrousel {
+    bottom: 87px;
+  }
+  .input-login {
+    width: 264.11px;
+    height: 44.56px;
+  }
+  .button-login {
+    width: 264.11px !important;
+    height: 44.56px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .login {
+    background: url('../../assets/bg-home-mobile.svg') no-repeat center top;
+    background-color: var(--core_blue);
+  }
+  .elipse-left-login {
+    display: none;
+  }
+  .elipse-rigth-login {
+    display: none;
+  }
+  .start-one-login {
+    display: none;
+  }
+  .start-two-login {
+    display: none;
+  }
+  .start-three-login {
+    display: none;
+  }
+}

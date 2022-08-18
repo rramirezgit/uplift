@@ -12,13 +12,27 @@ interface ButtonProps {
     text?: string;
     children?: string;
     height?: number;
+    className?: string;
+    onClick?: any;
     [key: string]: any;
 }
 
-export const Button = ({ width, height = 47.48, text = "Button", children = "Button", variant = "contained", color = "none", ...props }: ButtonProps) => {
+export const Button = ({
+    width,
+    height = 47.48,
+    text = "Button",
+    children = "Button",
+    variant = "contained",
+    color = "none",
+    className = "",
+    onClick,
+    ...props
+}: ButtonProps) => {
     return (
         <div>
             <ButtonMui
+                onClick={onClick}
+                className={`${className}`}
                 variant={variant}
                 sx={{
                     color: variant === "text" ? colors[color] : "white",
