@@ -130,7 +130,7 @@
 .button-login {
   width: 384.11px !important;
   height: 51.56px !important;
-  font-size: 28px !important;
+  font-size: 15px !important;
 }
 
 .input-login {
@@ -139,7 +139,8 @@
 }
 
 .input-login * input {
-  font-size: 182% !important;
+  font-size: 134% !important;
+
 }
 
 .modeda-tk {

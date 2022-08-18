@@ -11,13 +11,19 @@ export const Login = () => {
     const dispatch = useDispatch()
     const { status } = useSelector((state: RootState) => state.auth);
     let navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
 
     const [code, setCode] = useState("");
 
     const handleClik = () => {
-        if (code === "uplift123") {
-            dispatch(login())
-        }
+        setLoading(true);
+        setTimeout(() => {
+            if (code === "uplift123") {
+                dispatch(login())
+            } else {
+                setLoading(false);
+            }
+        }, 1500);
     }
 
     useEffect(() => {
@@ -47,7 +53,7 @@ export const Login = () => {
             <div className="form-login">
                 <div style={{ width: "56%" }}>
                     <div className="title-login">
-                        Lorem ipsum!!...
+                        Coming soon!!...
                     </div>
                     <div className="info-login">
                         Empowering artists own the end to end process
@@ -55,7 +61,7 @@ export const Login = () => {
                     </div>
                 </div>
                 <Input pholder="Code" type="password" className="input-login" onChange={handleChange} />
-                <Button color="red" className="button-login" text={"Enter"} onClick={handleClik} />
+                <Button loading={loading} color="red" className="button-login" text={"Enter"} onClick={handleClik} />
             </div>
 
         </div>);
