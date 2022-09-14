@@ -20,3 +20,5 @@ export const CardTokenize = ({ className = "", data }: CardTokenizeProps) => {
         </div>
     );
 };
+
+export default CardTokenize

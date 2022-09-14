@@ -15,6 +15,7 @@
   font-size: 42px;
   line-height: 70px;
   color: #ffffff;
+  z-index: 100;
 }
 
 .text-tkConquer {
@@ -28,6 +29,7 @@
   line-height: 40px;
   color: #ffffff;
   padding: 0px 4px 0px 12%;
+  z-index: 99;
 }
 
 .content-moneda {
@@ -35,9 +37,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 81vh;
-  position: relative;
-  top: 10%;
+  height: 967px;
+  position: absolute;
+  top: 0px;
 }
 
 .moneda-cara {
@@ -233,9 +235,9 @@
 }
 
 .content-carTk {
-  position: relative;
+  position: absolute;
   display: flex;
-  bottom: 161px;
+  bottom: 92px;
   gap: 31px;
   overflow-y: scroll;
   height: 184px;
@@ -244,12 +246,8 @@
 
 .button-tk {
   position: absolute !important;
-  bottom: 170px;
-  left: 63% !important;
-  width: 195.8px !important;
-  height: 61.9px !important;
-  font-size: 18.5796px !important;
-  font-weight: 700 !important;
+  bottom: 55px;
+  left: 65% !important;
   text-transform: lowercase !important;
 }
 
@@ -261,6 +259,8 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 32px;
+    z-index: 1;
+    top: 10px;
   }
 
   .start-tk {
@@ -274,9 +274,10 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    top: 83px;
+    top: 27px;
     width: 320px;
     width: 88%;
+    z-index: 1;
   }
 
   .button-tk {
@@ -291,7 +292,7 @@
   }
 
   .content-moneda {
-    top: -19px;  
+    top: -19px;
     height: 575px;
   }
 
@@ -337,3 +338,4 @@
     margin: -1px 10px -1px 20px;
   }
 }
+

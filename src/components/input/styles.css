@@ -1,7 +1,49 @@
 .input-uplift {
-  padding: 0px !important;
   border-color: white;
   border-radius: 40.9192px !important;
   border-style: solid;
+  position: relative;
+  color: white;
+  padding: 0px 29px;
 
+  background-color: var(--core_blue);
+}
+
+.input-uplift:focus-visible {
+  outline: white auto 1px;
+}
+
+.input-uplift::placeholder {
+  color: white;
+}
+
+.content-input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-message {
+  position: absolute;
+  bottom: -40%;
+  left: 7%;
+}
+
+.login-icon-button {
+  position: absolute !important;
+  width: 50px;
+  height: 50px;
+  top: 5%;
+  right: 0px;
+}
+
+.login-eye-icon {
+  width: 70%;
+  fill: white;
+}
+
+@media (max-width: 597px) {
+  .login-icon-button {
+    top: 0%;
+  }
 }

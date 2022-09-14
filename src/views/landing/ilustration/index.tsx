@@ -1,21 +1,22 @@
 
-import { Ilustrationimg } from 'assets';
 
-import { useMedia } from 'hooks';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './styles.css'
 
-export const Ilustration = () => {
-  const { large } = useMedia()
+const Ilustration = () => {
   return <div className='ilustration'>
     <div className='ilustration-title'>
       Make the most out of your music business
     </div>
 
-    {
-      !large && <Ilustrationimg className="ilustration-img" />
-    }
-
+    <LazyLoadImage
+      id="imgIlustration"
+      className='ilustration-img'
+      effect="blur"
+      src={`${process.env.REACT_APP_URL_IMAGES}upliftIlustration.png`} />
   </div>
 };
 
+export default Ilustration
 

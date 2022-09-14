@@ -1,22 +1,24 @@
 
 import { Grid } from '@mui/material';
-import { Start } from 'assets';
-import { ImageList } from 'components';
-import { PeImages } from 'components/imagPastExp';
+import { ReactComponent as Start } from 'assets/star.svg';
+import { LazyLoad } from 'components/lazy';
 import { useMedia } from 'hooks/useMedia';
+import { lazy } from 'react';
 import './styles.css'
 
-export const PastExperiences = () => {
+const ImageList = lazy(() => import('../../../components/imageList'))
+const PeImages = lazy(() => import('../../../components/imagPastExp'))
+const PastExperiences = () => {
 
-  const { mobile, medium, large } = useMedia()
+  const { medium, large } = useMedia()
 
   return (
     <div className="pastExperiences">
       <Grid container spacing={0}>
         <Grid item lg={6} md={12} sm={12}>
-          <div className="past-experiences__images">
-            <ImageList opacity={(medium || large) ? 0.1 : 1} />
-          </div>
+            <div className="past-experiences__images">
+              <ImageList opacity={(medium || large) ? 0.1 : 1} />
+            </div>
         </Grid>
 
         <Grid item lg={6} md={12} sm={12}>
@@ -29,7 +31,9 @@ export const PastExperiences = () => {
               These artists are already promoting their projects using Uplift
             </div>
             <div className="images-mobile">
-              <PeImages />
+              <LazyLoad tag='div'>
+                <PeImages />
+              </LazyLoad>
             </div>
           </div>
         </Grid>
@@ -41,5 +45,7 @@ export const PastExperiences = () => {
   )
     ;
 };
+
+export default PastExperiences
 
 

@@ -19,12 +19,19 @@
 }
 
 .prev-btn-custom {
-  opacity: 0;
-
   display: none;
   position: absolute !important;
-  top: 15% !important;
+  left: 0px !important;
+  position: absolute !important;
+  top: 24px !important;
   transition: all 0.3s ease-in-out;
+  padding: 11px 79px 19px 0px;
+  height: 296px;
+  cursor: pointer;
+}
+
+.prev-btn-custom :hover {
+  padding: 11px 200px 19px 0px;
 }
 
 .next-btn-custom {
@@ -33,9 +40,15 @@
   position: absolute !important;
   right: 0px !important;
   position: absolute !important;
-  top: 15% !important;
-  margin-left: 0px !important;
+  top: 24px !important;
   transition: all 0.3s ease-in-out;
+  padding: 11px 0px 19px 79px;
+  height: 296px;
+  cursor: pointer;
+}
+
+.next-btn-custom:hover {
+  padding: 11px 0px 19px 200px;
 }
 
 .alice-carousel__prev-btn {
@@ -46,7 +59,7 @@
   display: none !important;
 }
 
-.alice-item-carrousel-hover {
+.alice-carousel__stage-item:hover {
   margin-right: 132px !important;
 }
 

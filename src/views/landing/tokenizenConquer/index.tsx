@@ -1,14 +1,17 @@
 
-import { Start, Moneda } from 'assets';
-import { Button, CardTokenize } from 'components';
+import { ReactComponent as Start } from 'assets/star.svg';
+import Button from 'components/buttons';
+import CardTokenize from 'components/cardTokenize';
+import { LazyLoad } from 'components/lazy';
+import { MonedaGsad } from 'components/moneda';
 import gsap from 'gsap';
 import { MotionPathPlugin } from 'gsap/all';
 import { useMedia } from 'hooks';
-// import { useState } from 'react';
+
 import './styles.css'
 gsap.registerPlugin(MotionPathPlugin);
 
-export const TokenizenConquer = () => {
+const TokenizenConquer = () => {
   //  const [state, setstate] = useState(false);
   const { large } = useMedia()
   const dataCards = [
@@ -44,24 +47,10 @@ export const TokenizenConquer = () => {
     },
   ]
 
-  const onClick = () => {
-    // gsap.to(".prueba #prueba", {transform: "translate(-7px, 23px)", duration: 1})
-    // gsap.to(".prueba #prueba", {
-    //   duration: 1, 
-    //   ease: "power1.inOut",
-    //   reversed: state,
-    //   motionPath:{
-    //     path: [{x:0, y:0}, {x:-10, y:10}, {x:-50, y:50}, {x:-80, y:100}, ],
-    //   }
-    // });
-    // setstate(true)
-  }
-
 
   return (
     <div className="tokenizenConquer">
       <Start className='start-tk' />
-      <Start className='start-two-tk' />
       <Start className='start-three-tk' />
       <div className='title-tkConquer'>
         Tokenize and conquer
@@ -69,12 +58,12 @@ export const TokenizenConquer = () => {
       <div className='text-tkConquer'>
         Tokenize your projects and let your fans be a part of them. Achieve financial independence as your fans gain benefits.
       </div>
-      {/* moneda */}
-      <div className='content-moneda'>
-        <Moneda className='moneda-tk' onMouseOver={onClick} />
-      </div>
 
-      {large ?
+      <div className='content-moneda' >
+        <MonedaGsad />
+      </div>      
+
+      {large &&
         <>
           <div className='content-carTk'>
             {
@@ -84,15 +73,13 @@ export const TokenizenConquer = () => {
             }
           </div>
         </>
-        :
-        dataCards.map((data, index) => {
-          return <CardTokenize key={index} data={data} className={`card-tokenize-${index}`} />
-        })
+
       }
-        <Button variant='contained' color='orange' text='and much more' className={"button-tk"} />
+      <Button variant='contained' width={152.88} height={45} color='orange' text='and much more' className={"button-tk"} />
 
     </div>
   );
 };
 
+export default TokenizenConquer
 

@@ -84,6 +84,9 @@
 
   .uf--why-uplify .uf--content h2 {
     margin-bottom: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .uf--why-uplify .uf--content .uf--cards .uf--card {
@@ -106,13 +109,13 @@
     font-size: 17.037px;
     line-height: 57px;
   }
-  .uf--card:hover{
+  .uf--card:hover {
     transform: scale(1);
   }
 }
 
 @media (max-width: 466px) {
-  .uf--why-uplify .uf--content{
+  .uf--why-uplify .uf--content {
     background-image: url(../../../assets/bg-why-up-mobile.svg);
   }
 }

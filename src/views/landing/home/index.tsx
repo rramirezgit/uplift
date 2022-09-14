@@ -1,13 +1,20 @@
 import { Drawer, IconButton } from "@mui/material";
-import { ElipseLeft, ElipseRigth, Logo, MenuIcon, Start } from "assets";
-import { Button, Carrousel } from "components";
-import { useState } from "react";
+import { ElipseLeft, ElipseRigth } from "assets/elipses";
+import { ReactComponent as Logo } from 'assets/logo.svg';
+import { ReactComponent as MenuIcon } from 'assets/icons/menuIcon.svg';
+import { ReactComponent as Start } from 'assets/star.svg';
+import { useState, lazy } from 'react';
 import "./styles.css"
 
 
-export const Home = () => {
+const Button = lazy(() => import('../../../components/buttons'))
+const Carrousel = lazy(() => import('../../../components/carrousel'))
+
+
+const Home = () => {
 
     const [open, setOpen] = useState(false);
+
 
     const handleDMouseEnter = (e: any) => {
         const buttonPrev = document.querySelector('.prev-btn-custom') as HTMLElement
@@ -90,10 +97,10 @@ export const Home = () => {
                     of their services via one single platform
                 </div>
             </div>
+
             <div className="content-carrousel" onMouseEnter={handleDMouseEnter} onMouseLeave={handleDMouseLeave}>
                 <Carrousel />
             </div>
-
             <Drawer
                 anchor={"right"}
                 open={open}
@@ -117,3 +124,5 @@ export const Home = () => {
             </Drawer>
         </div>);
 };
+
+export default Home

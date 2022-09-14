@@ -1,12 +1,16 @@
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import {createRoot} from 'react-dom/client';
 import ThemeUPLIFT from './styles/ThemeUPLIFT';
 import './styles.css';
 import { Provider } from 'react-redux';
 import { store } from 'store';
-import { Navigation } from 'routers/Navigator';
+import { Navigation } from './routers/Navigator';
 
-const root = ReactDOM.createRoot(
+window.onscroll = function() {
+  console.log("Vertical: " + window.scrollY);
+  console.log("Horizontal: " + window.scrollX);
+};
+
+const root = createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
@@ -17,4 +21,3 @@ root.render(
   </Provider>
 );
 
-reportWebVitals();

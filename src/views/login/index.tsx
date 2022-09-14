@@ -1,41 +1,41 @@
-import { ElipseLeft, ElipseRigth, Logo, Start } from "assets";
-import { Button, Input } from "components";
-import { useState, useEffect } from 'react';
+const Button = lazy(() => import('../../components/buttons'))
+const Input = lazy(() => import('../../components/input'))
+
+import { ReactComponent as ElipseLeft } from "assets/elipses/elipse_home_left.svg";
+import { ReactComponent as ElipseRigth } from "assets/elipses/elipse_home_rigth.svg";
+import { ReactComponent as Logo } from "assets/logo.svg";
+import { ReactComponent as Start } from "assets/star.svg";
+import { Formik } from "formik";
+import * as Yup from 'yup';
+
+
+import { useState, useEffect, lazy } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "store";
 import { login } from "store/slices/auth";
 import "./styles.css"
 
-export const Login = () => {
+const Login = () => {
     const dispatch = useDispatch()
     const { status } = useSelector((state: RootState) => state.auth);
-    let navigate = useNavigate();
+    const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
-
-    const [code, setCode] = useState("");
-
-    const handleClik = () => {
-        setLoading(true);
-        setTimeout(() => {
-            if (code === "uplift123") {
-                dispatch(login())
-            } else {
-                setLoading(false);
-            }
-        }, 1500);
-    }
+ 
+    useEffect(() => {
+    
+      return () => {
+        setLoading(false);
+      };
+    }, []);
+    
 
     useEffect(() => {
         if (status === "authenticated") {
-            navigate("/")
+            let path = "/"
+            navigate(path)
         }
     }, [status]);
-
-
-    const handleChange = (e: any) => {
-        setCode(e.target.value);
-    }
 
     return (
         <div className="login">
@@ -60,9 +60,45 @@ export const Login = () => {
                         of their services via one single platform
                     </div>
                 </div>
-                <Input pholder="Code" type="password" className="input-login" onChange={handleChange} />
-                <Button loading={loading} color="red" className="button-login" text={"Enter"} onClick={handleClik} />
+                <Formik
+                    initialValues={{
+                        password: '',
+                    }}
+                    onSubmit={(values,formikHelpers) => {
+                        setLoading(true);
+                        if (values.password === "uplift123") {
+                            dispatch(login())
+                        } else {
+                            setLoading(false);
+                            formikHelpers.setErrors({ password: "Invalid password"})
+                        }
+                    }}
+                    validationSchema={Yup.object({
+                        password: Yup.string()
+                            .required('Required'),
+                    })}>
+                    {({ submitForm, touched, values }) => (
+                        <>
+                            <Input
+                                pholder="Password"
+                                type="password"
+                                className="input-login"
+                                name={"password"}
+                            />
+                            <Button
+                                loading={loading}
+                                color="red"
+                                type="submit"
+                                className="button-login"
+                                text={"Enter"}
+                                onClick={submitForm}
+                            />
+                        </>
+                    )}
+                </Formik>
             </div>
 
         </div>);
 };
+
+export default Login;

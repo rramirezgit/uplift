@@ -1,12 +1,20 @@
 import gsap from "gsap";
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
+import { useMedia } from "hooks/useMedia";
+import "./styles.css"
 import eros from 'assets/imageList/erosRamazzotti.png';
 import frame from 'assets/imageList/Frame1.png';
-import ana from 'assets/imageList/anakena.png';
-import "./styles.css"
-import { useMedia } from "hooks";
+import wy from 'assets/imageList/wy.png';
+import juanes from 'assets/imageList/juanes.png';
+import olgaTañon from 'assets/imageList/olgaTañon.png';
+import anakena from 'assets/imageList/anakena.png';
+import morat from 'assets/imageList/morat.png';
+import af from 'assets/imageList/af.png';
+import anaTorroja from 'assets/imageList/anaTorroja.png';
+import cProfetica from 'assets/imageList/cProfetica.png';
 
-const images = [eros, frame, ana, frame, eros, ana, eros, frame, ana, frame, eros, frame];
+//agregar solo 12 imagenes
+const images = [eros, frame, morat, wy, juanes, af, olgaTañon , anakena, anaTorroja, cProfetica, eros, juanes];
 
 export const ImageList = ({ opacity }: any) => {
 
@@ -19,23 +27,6 @@ export const ImageList = ({ opacity }: any) => {
         delayedPlay: undefined
     });
 
-
-
-    //@ts-ignore
-
-    function pauseBoxes(b) {
-        let classStr = 'pb-col0';
-        if (b.className.includes('pb-col1')) classStr = 'pb-col1';
-        if (b.className.includes('pb-col2')) classStr = 'pb-col2';
-        //@ts-ignore
-        for (let i = 0; i < 12; i++) {
-            //@ts-ignore
-            let b = document.querySelector('.mainBoxes').children[i];
-            //@ts-ignore
-
-            if (b?.className.includes(classStr)) gsap.to(b.tl, { timeScale: 0, ease: 'sine' });
-        }
-    }
 
     function playBoxes() {
         //@ts-ignore
@@ -66,7 +57,7 @@ export const ImageList = ({ opacity }: any) => {
                 overflow: 'hidden',
                 x: [60, 280, 500][column],
                 width: 400,
-                height: 640,
+                height: 660,
                 borderRadius: 20,
                 scale: 0.5,
                 zIndex: 1
@@ -88,6 +79,7 @@ export const ImageList = ({ opacity }: any) => {
             .set('.mainBoxes', { left: mobile ? '-133px' : '-93px', xPercent: 0, width: 1200, rotationX: 0, rotationY: 0, rotationZ: 0 })
             .set('.mainClose', { autoAlpha: 0, width: 60, height: 60, left: -30, top: -31, pointerEvents: 'none' })
             .fromTo('.main', { autoAlpha: 0 }, { duration: 0.6, ease: 'power2.inOut', autoAlpha: 1 }, 0.2)
+        console.log(_tl);
         document.querySelectorAll('.photoBox').forEach((node) => {
             node?.addEventListener('mouseenter', (e) => {
                 //@ts-ignore
@@ -116,44 +108,6 @@ export const ImageList = ({ opacity }: any) => {
             });
         });
 
-        // document.querySelectorAll('.photoBox').forEach((node) => {
-        //     node?.addEventListener('click', function (e) {
-        //         if (!state.isZooming) { //only tween if photoBox isn't currently zooming
-
-        //             setstate({ ...state, isZooming: true });
-        //             gsap.delayedCall(0.8, function () { setstate({ ...state, isZooming: false }) });
-
-        //             if (state.currentImg) {
-        //                 gsap.timeline({ defaults: { ease: 'expo.inOut' } })
-        //                     .to('.mainClose', { duration: 0.1, autoAlpha: 0, overwrite: true }, 0)
-        //                     .to('.mainBoxes', { duration: 0.5, scale: 1, left: '75%', width: 1200, rotationX: 14, rotationY: -15, rotationZ: 10, overwrite: true }, 0)
-        //                     .to('.photoBox', { duration: 0.6, opacity: 1, ease: 'power4.inOut' }, 0)
-        //                     .to(state.currentImg, { duration: 0.6, width: 400, height: 640, borderRadius: 20, x: state.currentImgProps.x, y: state.currentImgProps.y, scale: 0.5, rotation: 0, zIndex: 1 }, 0)
-        //                 // .add(playBoxes, 0.8)
-        //                 setstate({ ...state, currentImg: undefined });
-        //             }
-
-        //             else {
-        //                 pauseBoxes(e.currentTarget)
-
-        //                 setstate({ ...state, currentImg: e.currentTarget });
-        //                 //@ts-ignore
-        //                 setState({ ...state, currentImgProps: { ...state.currentImgProps, x: gsap.getProperty(e.currentTarget, 'x') } });
-        //                 //@ts-ignore
-        //                 setState({ ...state, currentImgProps: { ...state.currentImgProps, y: gsap.getProperty(e.currentTarget, 'y') } });
-
-        //                 gsap.timeline({ defaults: { duration: 0.6, ease: 'expo.inOut' } })
-        //                     .set(e.currentTarget, { zIndex: 100 })
-        //                     .fromTo('.mainClose', { x: state.mouse.x, y: state.mouse.y, background: 'rgba(0,0,0,0)' }, { autoAlpha: 1, duration: 0.3, ease: 'power3.inOut' }, 0)
-        //                     .to('.photoBox', { opacity: 0 }, 0)
-        //                     .to(e.currentTarget, { width: '100%', height: '100%', borderRadius: 0, x: 0, top: 0, y: 0, scale: 1, opacity: 1 }, 0)
-        //                     .to('.mainBoxes', { duration: 0.5, left: '50%', width: '100%', rotationX: 0, rotationY: 0, rotationZ: 0 }, 0.15)
-        //                     .to('.mainBoxes', { duration: 5, scale: 1.06, rotation: 0.05, ease: 'none' }, 0.65)
-        //             }
-        //         }
-        //     });
-        // });
-
         if (!!('ontouchstart' in window)) {
             console.log('touch device!')
             setstate({ ...state, mouse: { ...state.mouse, x: window.innerWidth - 50 } });
@@ -171,7 +125,6 @@ export const ImageList = ({ opacity }: any) => {
         }
     }
 
-
     return (
         <div className="constent-list-img" style={{opacity}}>
             <div className="main">
@@ -179,12 +132,13 @@ export const ImageList = ({ opacity }: any) => {
                 <div className="mainClose">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none">
                         <circle cx="30" cy="30" r="30" fill="#000" opacity="0.4" />
-                        <path d="M15,16L45,46 M45,16L15,46" stroke="#000" stroke-width="3.5" opacity="0.5" />
-                        <path d="M15,15L45,45 M45,15L15,45" stroke="#fff" stroke-width="2" />
+                        <path d="M15,16L45,46 M45,16L15,46" stroke="#000" strokeWidth="3.5" opacity="0.5" />
+                        <path d="M15,15L45,45 M45,15L15,45" stroke="#fff" strokeWidth="2" />
                     </svg>
-
                 </div>
             </div>
         </div>
     );
 };
+
+export default ImageList

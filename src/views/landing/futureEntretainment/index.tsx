@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import VerctorFuture from 'assets/vectorFuture.png';
 import { useMedia } from 'hooks';
 
-export const FutureEntretainment = () => {
+const FutureEntretainment = () => {
   const { medium, large } = useMedia()
 
   return (
@@ -28,9 +28,8 @@ export const FutureEntretainment = () => {
           </Grid>
           <Grid item lg={6} md={12} sm={12}>
             <div className="uf--content__img">
-              <img src={VerctorFuture} alt=""
+              <img loading='lazy' src={VerctorFuture} alt=""
                 className="verctor-future" />
-
             </div>
           </Grid>
         </Grid>
@@ -38,3 +37,5 @@ export const FutureEntretainment = () => {
     </section>
   );
 };
+
+export default FutureEntretainment
